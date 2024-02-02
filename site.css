@@ -1,0 +1,174 @@
+body {
+    background-color: #0A1414;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    color: #E6DCD2;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Markazi Text', serif;
+    color: #B49646;
+}
+
+main,
+footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+nav {
+    padding: 0 !important;
+    font-family: 'Markazi Text', serif;
+}
+
+.logo-part-1,
+.logo-part-2 {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.btn {
+    background-color: #B49646;
+    border-color: #B49646;
+    color: #0A1414 !important;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #A08232 !important;
+    border-color: #A08232 !important;
+    color: #E6DCD2;
+}
+
+label {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    background: #E6DCD2;
+    border-color: #B49646;
+}
+
+.form-control:focus {
+    background: #E6DCD2;
+    border-color: #B49646;
+    color: #0A1414;
+}
+
+@keyframes gentleShine-part-1 {
+
+    0%,
+    100% {
+        color: #E6DCD2;
+        text-shadow: 0 0 2px #B49646;
+    }
+
+    50% {
+        color: #B49646;
+        text-shadow: 0 0 4px #E6DCD2;
+    }
+}
+
+header .logo-part-1 {
+    animation: gentleShine-part-1 5s ease-in-out infinite;
+}
+
+
+@keyframes gentleShine-part-2 {
+
+    0%,
+    100% {
+        color: #B49646;
+        text-shadow: 0 0 2px #E6DCD2;
+    }
+
+    50% {
+        color: #E6DCD2;
+        text-shadow: 0 0 4px #B49646;
+    }
+}
+
+header .logo-part-2 {
+    animation: gentleShine-part-2 5s ease-in-out infinite;
+}
+
+
+main a,
+main a:visited{
+    color: #E6DCD2;
+
+}
+
+nav li:hover,
+nav li:active {
+    color: #A08232;
+    text-decoration: underline;
+}
+
+main a:hover,
+main a:active,
+nav li {
+    color: #B49646;
+}
+
+footer p a,
+footer p a:visited {
+    color: #E6DCD2;
+}
+
+
+footer p a:hover,
+footer p a:active {
+    color: #A08232;
+    text-decoration: underline;
+}
+
+.logo-part-1 {
+    font-family: 'Freehand', cursive;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.logo-part-2 {
+    font-family: 'Island Moments', cursive;
+    color: #B49646;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.header-logo a,
+.header-logo a:hover,
+.header-logo a:visited,
+.header-logo a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer div {
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin-bottom: 0.2rem;
+}
+
+footer img {
+    max-width: 2rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+main {
+    border-top: 1px solid #B49646;
+    border-bottom: 1px solid #B49646;
+}

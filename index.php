@@ -1,0 +1,1 @@
+<?php echo "http://localhost:81/PHP_team18/index.php. if you are here you are right. "; ?>
