@@ -12,10 +12,22 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: 'Markazi Text', serif;
-    color: #B49646;
+h6,
+tr,
+th {
+    font-family: 'Markazi Text', serif !important;
+    color: #B49646 !important;
 }
+
+td {
+    font-family: 'Karla', sans-serif !important;
+    color: #E6DCD2 !important;
+}
+
+th, td {
+    background-color: #0A1414 !important;
+}
+
 
 main,
 footer {
@@ -40,6 +52,10 @@ nav {
     color: #0A1414 !important;
     margin-top: 2rem;
     margin-bottom: 1rem;
+}
+
+td form .btn {
+    margin:0;
 }
 
 .btn:hover,
@@ -171,4 +187,26 @@ footer img {
 main {
     border-top: 1px solid #B49646;
     border-bottom: 1px solid #B49646;
+}
+
+.table {
+    border-collapse: separate;
+}
+.table th, .table td {
+    border-right: 1px solid #B49646;
+}
+.table th:first-child, .table td:first-child {
+    border-left: none;
+}
+.table tr {
+    border-bottom: 1px solid #B49646;
+}
+.table th:last-child, .table td:last-child {
+    border-right: none;
+}
+.table tr:last-child td {
+    border-bottom: none;
+}
+.table thead th {
+    border-bottom: 2px solid #B49646;
 }
