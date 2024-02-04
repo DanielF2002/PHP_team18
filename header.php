@@ -23,7 +23,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="site.css" />
-    <?php applyCustomCss(); ?> <!-- Apply custom css here. -->
+    <?php componentCustomerCss(); ?> <!-- Apply custom css here. -->
 </head>
 
 <body>
@@ -34,16 +34,12 @@
                     <p class="logo-part-1">The pure taste of</p>
                     <p class="logo-part-2">Midnight Sun Bistro</p>
                 </a>
-                <nav class="navbar navbar-expand">
-                    <ul class="navbar-nav d-flex justify-content-between w-100">
-                        <?php applyNavLinkes(); ?>
-                    </ul>
-                </nav>
+                <?php componentNav(); ?>
             </div>
         </header>
 
         <?php
-        function applyCustomCss()
+        function componentCustomerCss()
         {
             global $pageCssFilename;
             if (!isset($pageCssFilename) || empty($pageCssFilename)) {
@@ -51,7 +47,7 @@
             }
         }
 
-        function applyNavLinkes()
+        function componentNav()
         {
             $customNav = array(
                 array("name" => "Home", "link" => "index"),
@@ -66,14 +62,16 @@
                 array("name" => "Feedback", "link" => "feedback_admin"),
             );
             global $pageAdmin;
+            echo '<nav class="navbar navbar-expand"><ul class="navbar-nav d-flex justify-content-between w-100">';
             if (!isset($pageAdmin) || empty($pageAdmin) || !$pageAdmin) {
-                applyNavLinksHelper($customNav);
+                componentNavLink($customNav);
             } else {
-                applyNavLinksHelper($adminNav);
+                componentNavLink($adminNav);
             }
+            echo '</ul></nav>';
         }
 
-        function applyNavLinksHelper($links)
+        function componentNavLink($links)
         {
             foreach ($links as $link) {
                 echo "<li class=\"nav-item fs-4\"><a href=\"".$link["link"].".php\" class=\"nav-link\">".$link["name"]."</a></li>";
