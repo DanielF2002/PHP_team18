@@ -44,7 +44,7 @@ In this section, list and describe the features or functionality that you are wo
 - [ ] Feature 9 Mu ZHAO: Admin feedback management
 - [ ] Feature 10 Xingxing WANG: Menu presention
 - [ ] Feature 11 Xingxing WANG: Admin menu management
-- [ ] Feature 12 Xingxing WANG: Menu search
+- [ ] Feature 12 Xingxing WANG: Menu filter
 
 ### Feature 1
 
@@ -80,7 +80,7 @@ Reviews presention. A page for user to read the reviews.
 
 ### Feature 9
 
-Admin menu management. A page for admin, includes query, search, delete, and modify a table.
+Admin feedback management. A page for admin, includes query, search, delete, and modify a table.
 
 ### Feature 10
 
@@ -88,11 +88,11 @@ Menu presention. A page for user to read the menu, includes a table, and databas
 
 ### Feature 11
 
-Admin menu management. A page for admin to query, search, delete, and modify a table..
+Admin menu management. A page for admin to query, search, delete, and modify a table.
 
 ### Feature 12
 
-Menu search. A page for user to filter the database by keyword.
+Menu filter for user to filter the menu by category.
 
 ---
 
