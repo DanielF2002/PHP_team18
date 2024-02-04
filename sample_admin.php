@@ -10,7 +10,7 @@ include "header.php"; ?>
                 <th class="fs-4" scope="col">Actions</th>
                 <th class="fs-4" scope="col">ID</th>
                 <th class="fs-4" scope="col">Name</th>
-                <th class="fs-4" scope="col" class="d-none d-lg-table-cell">Info</th>
+                <th class="fs-4 d-none d-lg-table-cell" scope="col">Info</th>
             </tr>
         </thead>
         <tbody>
