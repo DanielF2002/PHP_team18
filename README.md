@@ -33,9 +33,9 @@ This website features user management (including administrator permission manage
 
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
-- [ ] Feature 1 Xin FENG: Restaurant info presentation.
-- [ ] Feature 2 Xin FENG: Restaurant info query.
-- [ ] Feature 3 Xin FENG: Restaurant info modification.
+- [ ] Feature 1 Xin FENG: Restaurant information presentation.
+- [ ] Feature 2 Xin FENG: Restaurant information query.
+- [ ] Feature 3 Xin FENG: Restaurant information modification.
 - [ ] Feature 4 Jin LU: Reservation
 - [ ] Feature 5 Jin LU: Reservation management
 - [ ] Feature 6 Jin LU: Admin reservation management
@@ -48,7 +48,7 @@ In this section, list and describe the features or functionality that you are wo
 
 ### Feature 1
 
-Restaurants information presentation in footer.php, includes name, city, address, etc.
+Restaurants information presentation in About Page, includes name, city, address, etc.
 
 ### Feature 2
 
