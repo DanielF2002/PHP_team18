@@ -1,5 +1,5 @@
-<?php $pageTitle = "Modify A Restaurant";
-$pageDescription = "Modify a new Restaurant in this page";
+<?php $pageTitle = "Modify A Branch";
+$pageDescription = "Modify a branch in this page";
 $pageAdmin = true;
 include "header.php"; ?>
 <main>
