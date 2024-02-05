@@ -54,6 +54,7 @@
                 array("name" => "Menu", "link" => "menu"),
                 array("name" => "Reservation", "link" => "reservation"),
                 array("name" => "Feedback", "link" => "feedback"),
+                array("name" => "About", "link" => "about"),
             );
             $adminNav = array(
                 array("name" => "Info", "link" => "info_admin"),
