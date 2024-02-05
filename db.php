@@ -7,7 +7,6 @@ if ($dbLocal) {
     $dbName = "team18";
 }
 
-
 $conn = new mysqli($dbHost, $dbUser, $dbPwd, $dbName);
 
 if ($conn->connect_error)
