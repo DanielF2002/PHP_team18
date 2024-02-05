@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS `team18`.`xin_feng_branches` (
 
 
 /* Xingxing Wang */
-CREATE TABLE `webprogramming_team18`.`menu_items` (
+CREATE TABLE `team18`.`menu_items` (
     `item_id` INT NOT NULL AUTO_INCREMENT , 
     `item_name` VARCHAR(100) NOT NULL , 
     `category` VARCHAR(50) NOT NULL , 
