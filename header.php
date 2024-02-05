@@ -52,9 +52,9 @@
             $customNav = array(
                 array("name" => "Home", "link" => "index"),
                 array("name" => "Menu", "link" => "menu"),
-                array("name" => "Reservation", "link" => "reservation"),
+                array("name" => "Booking", "link" => "reservation"),
                 array("name" => "Feedback", "link" => "feedback"),
-                array("name" => "About", "link" => "about"),
+                array("name" => "Branches", "link" => "branches"),
             );
             $adminNav = array(
                 array("name" => "Info", "link" => "info_admin"),
