@@ -4,7 +4,11 @@
 $pageTitle = "Modify A Branch";
 $pageDescription = "Modify a branch in this page";
 $pageAdmin = true;
-$branchesH1 = "Modify a branch here:";
-$branchesAction = "branches_modify_result.php";
-// todo run select sql here.
-include "branches_add_modify_helper_admin.php"; ?>
+if (isset($_POST['submit'])) 
+{
+    $branchesH1 = "Modify a branch here:";
+    $branchesAction = "branches_modify_result_admin.php";
+    // todo run select sql here.
+    include "branches_add_modify_helper_admin.php";
+}
+?>

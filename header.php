@@ -57,7 +57,7 @@
                 array("name" => "Branches", "link" => "branches"),
             );
             $adminNav = array(
-                array("name" => "Info", "link" => "info_admin"),
+                array("name" => "Branches", "link" => "branches_admin"),
                 array("name" => "Menu", "link" => "menu_admin"),
                 array("name" => "Bookings", "link" => "reservation_admin"),
                 array("name" => "Feedback", "link" => "feedback_admin"),
