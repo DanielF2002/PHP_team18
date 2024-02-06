@@ -15,6 +15,32 @@
     padding-top: 2rem;
 }
 
+#searchbar{
+    background-color: #0A1414;
+    height: 3.125rem;
+}
+
+
+#search{
+    width: 15rem;
+    height: 2.5rem;
+    align-items: center;
+}
+
+#searchButton, #search{
+    margin-top: 0.25rem;
+}
+.button-container {
+    display: flex; 
+    flex-direction: row;
+    align-items: center; 
+    
+}
+
+#delete, #edit {
+    width: 5rem;
+}
+
 
 @media (min-width: 992px) {
     .working-hours {
