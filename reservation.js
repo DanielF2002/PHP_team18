@@ -16,26 +16,31 @@ function formValidation(){
         alert("Invalid email address");
         return false;
     }
-
-    var formData = {
-        name: name, 
-        guestsCount: guestsCount,
-        bookingDate: bookingDate,
-        email: email
-    }   
-
-    fetch("reservation.php", {
+ 
+    var formData = new FormData(document.getElementById("reservationForm"));
+    var formDataJSON = {}; 
+    formData.forEach((value, key) => { 
+        formDataJSON[key] = value; 
+    })
+    element = document.querySelector('input[name="id"]');
+    fetchUrl = "reservation.php";
+    refreshUrl = "reservation.php";
+    if (element) {
+        fetchUrl = "editReservation.php";
+        refreshUrl = "adminReservation.php";
+    }
+    fetch(fetchUrl, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formDataJSON), 
     })
     .then(response => response.json())
     .then (data => {
         if(data.status === "success"){
         alert(data.message);
-        window.location.href = "reservation.php";}
+        window.location.href = refreshUrl;}
     })  
     .catch((error) => {
         console.error('Error:', error);
