@@ -1,39 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservation Management</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
-<body>
-    <main>
-        <table>
+<?php $pageTitle = "Booking Management";
+$pageDescription = "Manage reservations made by customers.";
+$pageCssFilename = "reservation";
+include "layout/header.php"; ?>
+<main>
+    <div class="searchbar">
+        <h1>Reservation Management</h1>        
+        <div class="navbar bg-body-tertiary">
+            <div class="container-fluid" id="searchbar">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
+                    <button class="btn btn-outline-success" id="searchButton" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
             <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Room ID</th>
-                <th>Check In</th>
-                <th>Check Out</th>
-                <th>Reservation Date</th>
-                <th>Reservation Status</th>
-                <th>Actions</th>
+                <th scope="col">Actions</th> 
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Guest Number</th>
+                <th scope="col">Date</th>
+                <th scope="col">Email</th>
+                
             </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>2021-01-01</td>
-                <td>2021-01-03</td>
-                <td>2020-12-01</td>
-                <td>Confirmed</td>
-                <td>
-                    <a href="adminReservationEdit.php">Edit</a>
-                    <a href="adminReservationDelete.php">Delete</a>
-                </td>
-            </tr>
-    </main>
-    
+        </thead>
+        <tbody>
+            <?php 
+                include "db.php";
+
+
+                $sql = "SELECT * FROM jinLu_bookinginfo";
+                $result = $conn->query($sql);
+                if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                        echo "<tr>";
+
+                        echo "<td>";
+                        echo "<div class='button-container'>";
+
+                        echo "<form name='editForm' method='post' action='edit.php" . htmlspecialchars($_SERVER['PHP_SELF']) . "'>";
+                        echo "<input type='hidden' name='edit_id' value='" . $row["id"] . "'>";
+                        // echo "<a href='edit.php?id=" . $row["id"] . "'>Edit</a>";
+                        echo "<button type='submit' id='edit' class='btn btn-primary' name='edit_button'>Edit</button>";
+                        echo "</form>";
+
+                        echo "<form name='deleteForm' method='post' action='" . htmlspecialchars($_SERVER['PHP_SELF']) . "'>";
+                        echo "<input type='hidden' name='delete_id' value='" . $row["id"] . "'>";
+                        echo "<button type='submit' id='delete' class='btn btn-danger' name='delete_button'>Delete</button>";
+                        echo "</form>";
+                        
+                        echo "</div>";
+                        echo "</td>";
+
+                        echo "<td>" . $row["id"] . "</td>";
+                        echo "<td>" . $row["name"] . "</td>";
+                        echo "<td>" . $row["guestNumber"] . "</td>";
+                        echo "<td>" . $row["date"] . "</td>";
+                        echo "<td>" . $row["email"] . "</td>";
+        
+                        echo "</tr>";
+                    }
+                } else {
+                    echo "0 results";
+                }
+            ?>
+        </tbody>
+    </table>
+    <?php 
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            if ($_POST["form"]=== "deleteForm" && isset($_POST['delete_button'])) {
+                $id = $_POST['delete_id'];
+                $sql = "DELETE * FROM reservations WHERE id = $id";
+                if ($mysqli->query($sql) === TRUE) {
+                    echo "Record deleted successfully";
+                } else {
+                    echo "Error deleting record: " . $mysqli->error;
+                }
+            }
+        }
+    ?>
+</main>    
 </body>
 </html>
