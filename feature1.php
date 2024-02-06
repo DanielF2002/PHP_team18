@@ -1,32 +1,16 @@
-<?php $pageTitle = "Branches Management";
-$pageDescription = "Manage the branches";
-$pageAdmin = true;
+<?php $pageTitle = "Branches of Midnight Sun Bistro";
+$pageDescription = "Check address, telephone, and other information about our restaurants";
 include "layout/header.php"; ?>
 <main>
-    <h1>Branches Management: </h1>
-    <table class="table text-center">
-        <thead>
-            <tr>
-                <th class="fs-4" scope="col">Action</th>
-                <th class="fs-4" scope="col">Name</th>
-                <th class="fs-4 d-none d-lg-table-cell" scope="col">Tel</th>
-                <th class="fs-4 d-none d-lg-table-cell" scope="col">Email</th>
-                <th class="fs-4 d-none d-lg-table-cell" scope="col">Address</th>
-                <th class="fs-4 d-none d-lg-table-cell" scope="col">Url</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php branchFetchAll(); ?>
-        </tbody>
-    </table>
-    <form action="feature2.php" method="post" class="d-inline">
-        <input type="hidden" name="mode" value="insert">
-        <button type="submit" class="btn">Add a new branch</button>
-    </form>
+    <h1>Branches of Midnight Sun Bistro:</h1>
+    <div class="row">
+        <?php branchFetchAll(); ?>
+    </div>
 </main>
 
-<?php
+<?php include "layout/footer.php"; ?>
 
+<?php
 // Fetch all data from db
 function branchFetchAll()
 {
@@ -37,25 +21,14 @@ function branchFetchAll()
         if ($result->num_rows > 0) {
             while ($item = $result->fetch_assoc()) {
                 echo '
-<tr>
-    <td>
-        <form action="feature3.php" method="post" class="d-inline">
-            <input type="hidden" name="id" value="'.$item["id"].'">
-            <input type="hidden" name="mode" value="update">
-            <button type="submit" class="btn">Edit</button>
-        </form>
-        <form action="feature3_result.php" method="post" class="d-inline">
-            <input type="hidden" name="id" value="'.$item["id"].'">
-            <input type="hidden" name="mode" value="delete">
-            <button type="submit" class="btn">Delete</button>
-        </form>
-    </td>
-    <td>'.$item["name"].'</td>
-    <td class="d-none d-lg-table-cell">'.$item["tel"].'</td>
-    <td class="d-none d-lg-table-cell">'.$item["email"].'</td>
-    <td class="d-none d-lg-table-cell">'.$item["address"].'</td>
-    <td class="d-none d-lg-table-cell">'.$item["url"].'</td>
-</tr>';}
+<div class="col-12 col-lg-6 text-center">
+    <a href="#"><h3>' . $item["name"] . '</h3></a>
+    <p>Tel: <a href="tel:' . $item["tel"] . '">' . $item["tel"] . '</a></p>
+    <p>Emaill: <a href="mailto:' . $item["email"] . '"> ' . $item["email"] . '</a></p>
+    <p>Address: ' . $item["address"] . '</p>
+</div>
+';
+            }
         } else {
             echo "No Record Found";
         }
@@ -64,6 +37,5 @@ function branchFetchAll()
     }
     $conn->close();
 }
-
+;
 ?>
-<?php include "layout/footer.php"; ?>
