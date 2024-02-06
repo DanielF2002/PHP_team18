@@ -30,6 +30,17 @@ include "layout/header.php"; ?>
             <?php 
                 include "db.php";
 
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    if (isset($_POST['delete_button'])) {
+                        $deleteFormValue = $_POST["deleteForm"];
+                        $sql = "DELETE FROM jinLu_bookinginfo WHERE id = $deleteFormValue";
+                        if ($conn->query($sql) === TRUE) {
+                            echo "Record deleted successfully";
+                        } else {
+                            echo "Error deleting record: " . $conn->error;
+                        }
+                    }
+                }
 
                 $sql = "SELECT * FROM jinLu_bookinginfo";
                 $result = $conn->query($sql);
@@ -40,14 +51,11 @@ include "layout/header.php"; ?>
                         echo "<td>";
                         echo "<div class='button-container'>";
 
-                        echo "<form name='editForm' method='post' action='edit.php" . htmlspecialchars($_SERVER['PHP_SELF']) . "'>";
-                        echo "<input type='hidden' name='edit_id' value='" . $row["id"] . "'>";
-                        // echo "<a href='edit.php?id=" . $row["id"] . "'>Edit</a>";
-                        echo "<button type='submit' id='edit' class='btn btn-primary' name='edit_button'>Edit</button>";
-                        echo "</form>";
+                        echo "<a  class='btn btn-primary' id='edit' href='editReservation.php?id=" . $row["id"] . "'>Edit</a>";
+
 
                         echo "<form name='deleteForm' method='post' action='" . htmlspecialchars($_SERVER['PHP_SELF']) . "'>";
-                        echo "<input type='hidden' name='delete_id' value='" . $row["id"] . "'>";
+                        echo "<input type='hidden' name='deleteForm' value='" . $row["id"] . "'>";
                         echo "<button type='submit' id='delete' class='btn btn-danger' name='delete_button'>Delete</button>";
                         echo "</form>";
                         
@@ -65,22 +73,10 @@ include "layout/header.php"; ?>
                 } else {
                     echo "0 results";
                 }
+                $conn->close();
             ?>
         </tbody>
     </table>
-    <?php 
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            if ($_POST["form"]=== "deleteForm" && isset($_POST['delete_button'])) {
-                $id = $_POST['delete_id'];
-                $sql = "DELETE * FROM reservations WHERE id = $id";
-                if ($mysqli->query($sql) === TRUE) {
-                    echo "Record deleted successfully";
-                } else {
-                    echo "Error deleting record: " . $mysqli->error;
-                }
-            }
-        }
-    ?>
 </main>    
 </body>
 </html>
