@@ -91,7 +91,8 @@ function branchFetch()
         $result = $conn->query($sql);
         if ($result != FALSE && $result->num_rows > 0) {
             $item = $result->fetch_assoc();
-            return [branchAssembleValue($item["name"]), branchAssembleValue($item["email"]), branchAssembleValue($item["tel"]), branchAssembleValue($item["url"]), branchAssembleValue($item["address"])];
+            return [branchAssembleValue($item["name"]), branchAssembleValue($item["email"]), branchAssembleValue($item["tel"]), 
+            branchAssembleValue($item["url"]), branchAssembleValue($item["address"])];
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
