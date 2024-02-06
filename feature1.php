@@ -22,10 +22,11 @@ function branchFetchAll()
             while ($item = $result->fetch_assoc()) {
                 echo '
 <div class="col-12 col-lg-6 text-center">
-    <a href="#"><h3>' . $item["name"] . '</h3></a>
+    <h3>' . $item["name"] . '</h3>
     <p>Tel: <a href="tel:' . $item["tel"] . '">' . $item["tel"] . '</a></p>
     <p>Emaill: <a href="mailto:' . $item["email"] . '"> ' . $item["email"] . '</a></p>
     <p>Address: ' . $item["address"] . '</p>
+    <p><a href="#">' . $item["url"] . '</a></p>
 </div>
 ';
             }
