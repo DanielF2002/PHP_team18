@@ -28,37 +28,33 @@
 
 <?php $pageTitle = "Reservation";
 $pageDescription = "Reserve table for your dinner at Midnight Sun Bistro.";
-$pageCssFilename = "layout/css/reservation";
+$pageCssFilename = "reservation";
 include "layout/header.php"; ?>
   
 <main>
     <div class = "container row">
-        <form id="reservationForm" class="col-lg-6 bookform custom-padding" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+    <form id="reservationForm" class="col-lg-6 bookform custom-padding" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
             <h1>Reserve a seat</h1>
             <div>
                 <label for="name" class="form-label fs-5">Name</label>
-                <input type="text" name="nimi" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Please enter your name">
+                <input type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Please enter your name" required>
             </div>
             <div class="mb-3">
-                <label for="guestNumber" class="form-label fs-5">Number of Guests</label>
-                <input type="number" name="guestsCount" class="form-control" id="guestNumber" placeholder="5">
+                <label for="guestsCount" class="form-label fs-5">Number of Guests</label>
+                <input type="number" name="guestsCount" class="form-control" id="guestsCount" placeholder="5" required>
             </div>
             <div class="mb-3">
-                <label for="phoneNumber" class="form-label fs-5">Phone number</label>
-                <input type="text" name="phoneNumber" class="form-control" id="phoneNumber" placeholder="09 310 10023">
+                <label for="email" class="form-label fs-5">Email</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="carol@gmail.com" required>
             </div>
             <div class="mb-3">
                 <label for="date" class="form-label fs-5">Date</label>
-                <input type="date" name="bookingDate" class="form-control" id="date" placeholder="21/01/2024">
-            </div>
-            <div class="mb-3">
-                <label for="time" class="form-label fs-5">Time</label>
-                <input type="text" name="arrivalTime" class="form-control" id="time" placeholder="18:30">
+                <input type="date" name="bookingDate" class="form-control" id="date" placeholder="21/01/2024" required>
             </div>
             <div class="d-grid">
                 <button type="submit" id="submitForm" name="submit" class="btn btn-primary d-grid">Confirm</button>
             </div>
-        </form>  
+        </form>
         <div class = "col-lg-6 working-hours">
             <section>
                 <div class = "hours">
@@ -103,11 +99,11 @@ include "layout/header.php"; ?>
             <h3>CONTACT</h3>
             <p><a href="mailto:info@midnightsun.fi">info@midnightsun.fi</a></p>
             <div id="social-media">
-                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"
+                <a href="https://www.facebook.com" target="_blank"><img src="layout/images/facebook.png"
                         alt="facebook logo" /></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png"
+                <a href="https://www.instagram.com/" target="_blank"><img src="layout/images/instagram.png"
                         alt="instagram logo" /></a>
-                <a href="https://www.tiktok.com" target="_blank"><img src="images/tiktok.png"
+                <a href="https://www.tiktok.com" target="_blank"><img src="layout/images/tiktok.png"
                         alt="tiktok logo" /></a>
             </div>
         </div>

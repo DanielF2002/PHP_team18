@@ -42,7 +42,7 @@
         {
             global $pageCssFilename;
             if (isset($pageCssFilename) || !empty($pageCssFilename)) {
-                echo "<link rel=\"stylesheet\" href=\"css/$pageCssFilename.css\" />";
+                echo "<link rel=\"stylesheet\" href=\"layout/css/$pageCssFilename.css\" />";
             }
         }
 
