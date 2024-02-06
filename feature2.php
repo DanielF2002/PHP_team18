@@ -1,85 +1,69 @@
-<?php
-if (isset($_POST["mode"])) 
-{
+<?php $pageTitle = "Branches Management";
+$pageDescription = "Manage the branches";
 $pageAdmin = true;
-list($pageTitle, $pageDescription, $branchesH1) = branchesGetHeaderProperties();
-$branchesId = branchesParsePost();
-list($branchesName, $branchesEmail, $branchesTel, $branchesUrl, $branchesAddress) = branchesFetch();
-include "layout/header.php";
-
-echo '
-    <main>
-    <div class="container row d-lg-flex align-items-center">
-        <form class="col-12 col-lg-6" method="post" action="<?php echo $branchesAction; ?>">
-            <h1>'.$branchesH1.'</h1>
-            <div class="form-group">
-                <label for="name" class="fs-5">Name</label>
-                <input type="text" class="form-control" id="name" name="name" '.$branchesName.'>
-            </div>
-            <div class="form-group">
-                <label for="email" class="fs-5">Email</label>
-                <input type="email" class="form-control" id="email" name="email" '.$branchesEmail.'>
-            </div>
-            <div class="form-group">
-                <label for="tel" class="fs-5">Telephone</label>
-                <input type="tel" class="form-control" id="tel" name="tel" '.$branchesTel.'>
-            </div>
-            <div class="form-group">
-                <label for="url" class="fs-5">Url</label>
-                <input type="url" class="form-control" id="url" name="url" '.$branchesUrl.'>
-            </div>
-            <div class="form-group">
-                <label for="add" class="fs-5">Address</label>
-                <input type="text" class="form-control" id="address" name="address" '.$branchesAddress.'>
-            </div>
-            <div class="d-grid">
-                <button type="submit" name="submit" class="btn btn-primary btn-block">Submit</button>
-            </div>
-        </form>
-        <aside class="col-lg-6 d-none d-lg-block">
-            <div class="logo col-12">
-                <p class="logo-part-1">
-                    The pure taste of
-                </p>
-                <p class="logo-part-2">
-                    Midnight Sun Bistro
-                </p>
-            </div>
-        </aside>
-    </div>
+include "layout/header.php"; ?>
+<main>
+    <h1>Branches Management: </h1>
+    <table class="table text-center">
+        <thead>
+            <tr>
+                <th class="fs-4" scope="col">Action</th>
+                <th class="fs-4" scope="col">Name</th>
+                <th class="fs-4 d-none d-lg-table-cell" scope="col">Tel</th>
+                <th class="fs-4 d-none d-lg-table-cell" scope="col">Email</th>
+                <th class="fs-4 d-none d-lg-table-cell" scope="col">Address</th>
+                <th class="fs-4 d-none d-lg-table-cell" scope="col">Url</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php branchFetchAll(); ?>
+        </tbody>
+    </table>
+    <form action="feature3.php" method="post" class="d-inline">
+        <input type="hidden" name="mode" value="insert">
+        <button type="submit" class="btn">Add a new branch</button>
+    </form>
 </main>
-';
-include "layout/footer.php";
-};
 
-// Parse id from Post if under mode update.
-function branchesParsePost()
+<?php
+
+// Fetch all data from db
+function branchFetchAll()
 {
-    global $_POST;
-    if ($_POST["mode"] == "update") {
-        return $_POST["id"];
+    include "db.php";
+    $sql = "SELECT * FROM xin_feng_branches;";
+    $result = $conn->query($sql);
+    if ($result != FALSE) {
+        if ($result->num_rows > 0) {
+            while ($item = $result->fetch_assoc()) {
+                echo '
+<tr>
+    <td>
+        <form action="feature3.php" method="post" class="d-inline">
+            <input type="hidden" name="id" value="'.$item["id"].'">
+            <input type="hidden" name="mode" value="update">
+            <button type="submit" class="btn">Edit</button>
+        </form>
+        <form action="feature3_result.php" method="post" class="d-inline">
+            <input type="hidden" name="id" value="'.$item["id"].'">
+            <input type="hidden" name="mode" value="delete">
+            <button type="submit" class="btn">Delete</button>
+        </form>
+    </td>
+    <td>'.$item["name"].'</td>
+    <td class="d-none d-lg-table-cell">'.$item["tel"].'</td>
+    <td class="d-none d-lg-table-cell">'.$item["email"].'</td>
+    <td class="d-none d-lg-table-cell">'.$item["address"].'</td>
+    <td class="d-none d-lg-table-cell">'.$item["url"].'</td>
+</tr>';}
+        } else {
+            echo "No Record Found";
+        }
     } else {
-        return "";
+        echo "Error: " . $sql . "<br>" . $conn->error;
     }
+    $conn->close();
 }
 
-// Set $pageTitle, $pageDescription, $branchesH1 by request mode.
-function branchesGetHeaderProperties()
-{
-    global $_POST;
-    if ($_POST["mode"] == "insert") {
-        return ["Add A New Branch", "Add a new branch in this page", "Add a new branch here:"];
-    } else if ($_POST["mode"] == "update") {
-        return ["Modify A Branch", "Modify a branch in this page", "Modify a branch here:"];
-    } else {
-        return;
-    }
-}
-
-// Parse $branchesName, $branchesEmail, $branchesTel, $branchesUrl, $branchesAddress by fetching from db.
-function branchesFetch()
-{
-    global $_POST, $branchesName, $branchesEmail, $branchesTel, $branchesUrl, $branchesAddress;
-    return ["","","","",""];
-}
 ?>
+<?php include "layout/footer.php"; ?>
