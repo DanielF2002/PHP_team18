@@ -22,7 +22,7 @@
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="site.css" />
+    <link rel="stylesheet" href="css/site.css" />
     <?php componentCustomerCss(); ?> <!-- Apply custom css here. -->
 </head>
 
@@ -43,7 +43,7 @@
         {
             global $pageCssFilename;
             if (!isset($pageCssFilename) || empty($pageCssFilename)) {
-                echo "<link rel=\"stylesheet\" href=\"$pageCssFilename.css\" />";
+                echo "<link rel=\"stylesheet\" href=\"css/$pageCssFilename.css\" />";
             }
         }
 
@@ -57,7 +57,7 @@
                 array("name" => "Branches", "link" => "branches"),
             );
             $adminNav = array(
-                array("name" => "Info", "link" => "info_admin"),
+                array("name" => "Branches", "link" => "branches_admin"),
                 array("name" => "Menu", "link" => "menu_admin"),
                 array("name" => "Bookings", "link" => "reservation_admin"),
                 array("name" => "Feedback", "link" => "feedback_admin"),

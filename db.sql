@@ -1,4 +1,5 @@
 /* Xin Feng */
+--DROP TABLE `team18`.`xin_feng_branches`;
 CREATE TABLE IF NOT EXISTS `team18`.`xin_feng_branches` (
     `id` INT NOT NULL AUTO_INCREMENT,
     `name` VARCHAR(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL UNIQUE,
