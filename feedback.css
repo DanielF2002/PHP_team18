@@ -16,10 +16,7 @@ main .logo {
     margin-right: 0.2rem;
 }
 
-.card-title,
-.card-body {
-    color: #0A1414;
-}
+
 
 .card-title {
     text-align: center;
@@ -32,6 +29,11 @@ main .logo {
 img {
     max-width: 60%;
     margin-top: 1rem;
+}
+
+.carousel {
+    background-color: #343a40;
+    border-radius: 10px;
 }
 
 @media (min-width: 1200px) {

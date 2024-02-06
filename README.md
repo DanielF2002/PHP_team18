@@ -33,30 +33,30 @@ This website features user management (including administrator permission manage
 
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
-- [ ] Feature 1 Xin FENG: User Management (including administrator permission management).
-- [ ] Feature 2 Xin FENG: User Login
-- [ ] Feature 3 Xin FENG: User Registraion
+- [ ] Feature 1 Xin FENG: Restaurant information presentation.
+- [ ] Feature 2 Xin FENG: Restaurant information query.
+- [ ] Feature 3 Xin FENG: Restaurant information modification.
 - [ ] Feature 4 Jin LU: Reservation
 - [ ] Feature 5 Jin LU: Reservation management
 - [ ] Feature 6 Jin LU: Admin reservation management
 - [ ] Feature 7 Mu ZHAO: Online feedback
-- [ ] Feature 8 Mu ZHAO: Reviews presention
+- [ ] Feature 8 Mu ZHAO: Reviews presentation
 - [ ] Feature 9 Mu ZHAO: Admin feedback management
-- [ ] Feature 10 Xingxing WANG: Menu presention
+- [ ] Feature 10 Xingxing WANG: Menu presentation
 - [ ] Feature 11 Xingxing WANG: Admin menu management
 - [ ] Feature 12 Xingxing WANG: Menu search
 
 ### Feature 1
 
-User Management (including administrator permission management). A page for admin to manage the users, includes query, search, delete, and modify a table.
+Restaurants information presentation in About Page, includes name, city, address, etc.
 
 ### Feature 2
 
-User Login page, includes a form, data validation, and database interaction.
+Restaurant info query in a page for the administrator. The administrator can list these fields and query by keywords.
 
 ### Feature 3
 
-User Login page, includes a form, data validation, and database interaction.
+Restaurant info modification page for the administrator. The administrator can add a new address (since it's a restaurant chain), or just modify something there.
 
 ### Feature 4
 
@@ -100,7 +100,7 @@ Menu search. A page for user to filter the database by keyword.
 
 List the database tables that are part of your project. 
 
-- Table 1 (Created By Xin FENG): USER
+- Table 1 (Created By Xin FENG): Information
 - Table 2 (Created By Jin LU): RESERVATION
 - Table 3 (Created By Mu ZHAO): FEEDBACK
 - Table 4 (Created By Xingxing WANG): MENU
@@ -113,8 +113,8 @@ List the database tables that are part of your project.
 
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
-- Form 1 (Created By Xin FENG): Form Name: UserLogin, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-- Form 2 (Created By Xin FENG): Form Name: UserRegistration, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 1 (Created By Xin FENG): Form Name: Restaurant infomation, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 2 (Created By Xin FENG): Form Name: Restaurant modification, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 3 (Created By Jin LU): Form Name: Reservation, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 4 (Created By Mu ZHAO): Form Name: Feedback, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 5 (Created By Xingxing WANG): Form Name: MenuSearch, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
@@ -126,7 +126,7 @@ List and describe any forms that have been created as part of your project. Incl
 
 List any tables that you have created in the project work
 
-- Table 1 (Created By Xin FENG): Table Name: User | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 1 (Created By Xin FENG): Table Name: Restaurants | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 - Table 2 (Created By Jin LU): Table Name: Reservation | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 - Table 3 (Created By Mu ZHAO): Table Name: Feedback | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 - Table 4 (Created By Xingxing WANG): Table Name: Menu | Link to the related code file (github) | Link to the table (shell.hamk.fi).
