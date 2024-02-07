@@ -1,3 +1,4 @@
+// reservation form validation and submission
 function formValidation(){
     event.preventDefault();
     console.log("Form submitted");
@@ -39,12 +40,16 @@ function formValidation(){
     .then(response => response.json())
     .then (data => {
         if(data.status === "success"){
-        alert(data.message);
+        alert(data.message + " We will contact you one day before your appoinment!" );
         window.location.href = refreshUrl;}
     })  
     .catch((error) => {
         console.error('Error:', error);
     });
 }
+
 var form = document.getElementById('reservationForm');
 form.addEventListener('submit', formValidation);
+
+
+
