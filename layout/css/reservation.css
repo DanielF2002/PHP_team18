@@ -21,10 +21,11 @@
 }
 
 
-#search{
-    width: 15rem;
+#searchText{
+    width: 30rem;
     height: 2.5rem;
     align-items: center;
+    margin-top: 0.25rem;
 }
 
 
