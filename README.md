@@ -36,7 +36,7 @@ In this section, list and describe the features or functionality that you are wo
 - [ ] Feature 1 Xin FENG: Restaurant information presentation.
 - [ ] Feature 2 Xin FENG: Restaurant information query.
 - [ ] Feature 3 Xin FENG: Restaurant information modification.
-- [ ] Feature 4 Jin LU: Reservation
+- [ ] Feature 4 Jin LU: Online Reservation
 - [ ] Feature 5 Jin LU: Reservation management
 - [ ] Feature 6 Mu ZHAO: Online feedback
 - [ ] Feature 7 Mu ZHAO: Reviews presentation
@@ -111,8 +111,9 @@ List and describe any forms that have been created as part of your project. Incl
 - Form 1 (Created By Xin FENG): Form Name: Restaurant infomation, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 2 (Created By Xin FENG): Form Name: Restaurant modification, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 3 (Created By Jin LU): Form Name: Reservation, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-- Form 4 (Created By Mu ZHAO): Form Name: Feedback, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-- Form 5 (Created By Xingxing WANG): Form Name: MenuSearch, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 4 (Created By Jin LU): Form Name: Booking modification, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 5 (Created By Mu ZHAO): Form Name: Feedback, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 6 (Created By Xingxing WANG): Form Name: MenuSearch, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 
 
 ---
