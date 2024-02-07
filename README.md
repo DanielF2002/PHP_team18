@@ -38,13 +38,12 @@ In this section, list and describe the features or functionality that you are wo
 - [ ] Feature 3 Xin FENG: Restaurant information modification.
 - [ ] Feature 4 Jin LU: Reservation
 - [ ] Feature 5 Jin LU: Reservation management
-- [ ] Feature 6 Jin LU: Admin reservation management
-- [ ] Feature 7 Mu ZHAO: Online feedback
-- [ ] Feature 8 Mu ZHAO: Reviews presentation
-- [ ] Feature 9 Mu ZHAO: Admin feedback management
-- [ ] Feature 10 Xingxing WANG: Menu presentation
-- [ ] Feature 11 Xingxing WANG: Admin menu management
-- [ ] Feature 12 Xingxing WANG: Menu filter
+- [ ] Feature 6 Mu ZHAO: Online feedback
+- [ ] Feature 7 Mu ZHAO: Reviews presentation
+- [ ] Feature 8 Mu ZHAO: Admin feedback management
+- [ ] Feature 9 Xingxing WANG: Menu presentation
+- [ ] Feature 10 Xingxing WANG: Admin menu management
+- [ ] Feature 11 Xingxing WANG: Menu search
 
 ### Feature 1
 
@@ -60,39 +59,35 @@ Restaurant info modification page for the administrator. The administrator can a
 
 ### Feature 4
 
-Reservation. A page for user to submit the reservation request, includes a form, data validation, and database interaction.
+Reservation page is for customer to make their bookings online. 
 
 ### Feature 5
 
-Reservation management. A page for user to check, modify and cancel a reservation, includes a form, a table, data validation, and database interaction.
+Reservation management. A page for admin to check, search, modify and cancel a reservation.
 
 ### Feature 6
 
-Admin reservation management, A page for admin, includes query, search, delete, and modify a table.
+Reviews presention. A page for user to read the reviews, includes a table, and database interaction.
 
 ### Feature 7
 
-Reviews presention. A page for user to read the reviews, includes a table, and database interaction.
+Reviews presention. A page for user to read the reviews.
 
 ### Feature 8
 
-Reviews presention. A page for user to read the reviews.
+Admin menu management. A page for admin, includes query, search, delete, and modify a table.
 
 ### Feature 9
 
-Admin feedback management. A page for admin, includes query, search, delete, and modify a table.
+Menu presention. A page for user to read the menu, includes a table, and database interaction.
 
 ### Feature 10
 
-Menu presention. A page for user to read the menu, includes a table, and database interaction.
+Admin menu management. A page for admin to query, search, delete, and modify a table..
 
 ### Feature 11
 
-Admin menu management. A page for admin to query, search, delete, and modify a table.
-
-### Feature 12
-
-Menu filter for user to filter the menu by category.
+Menu search. A page for user to filter the database by keyword.
 
 ---
 
