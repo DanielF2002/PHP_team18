@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `team18`.`xin_feng_branches` (
 
 
 /* Xingxing Wang */
-CREATE TABLE `team18`.`menu_items` (
+CREATE TABLE IF NOT EXISTS `team18`.`xingxing_menuItems` (
     `item_id` INT NOT NULL AUTO_INCREMENT , 
     `item_name` VARCHAR(100) NOT NULL , 
     `category` VARCHAR(50) NOT NULL , 
@@ -22,7 +22,7 @@ CREATE TABLE `team18`.`menu_items` (
     PRIMARY KEY (`item_id`)) 
     ENGINE = InnoDB;
 
-INSERT INTO menu_items (item_name, category, ingredients, vegetarian, price) 
+INSERT INTO xingxing_menuItems (item_name, category, ingredients, vegetarian, price) 
 VALUES 
     ('Caprese Salad', 'Starters/Snacks', 'Fresh mozzarella, ripe tomatoes, basil leaves, balsamic glaze', TRUE, 6.50),
     ('Bruschetta Trio', 'Starters/Snacks', 'Classic tomato and basil, olive tapenade, roasted red pepper', TRUE, 8.00),
