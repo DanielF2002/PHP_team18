@@ -121,6 +121,9 @@ List the database tables that are part of your project.
 - Table 4 (Created By Xingxing WANG): MENU
 > Include the ER Diagram of the database.
 ![ER Xin_Feng_Table](images/er_xin_feng_branches.png)
+![ER xingxing_menuItem](images/er_xingxing_menuItems.png)
+![ER jinLu_reservationInfo](/images/jinLu_reservationInfo.png)
+
 
 ---
 
