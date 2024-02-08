@@ -76,9 +76,9 @@ Reservation page is for customer to make their bookings online.
 
 Reservation management. A page for admin to check, search, modify and cancel a reservation.
 - **Table** to show all booking information to admin. All data are connected with table jinLu_reservationInfo. admin can also make changes (CRUD) to the bookinginfo table.
-(github: [reservationAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationAdmin.php))
+(github: [reservationAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationAdmin.php)) | Link to the form (shell.hamk.fi)
 - **Form** for admin to edit the selected data.
-(github: [reservationEdit.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationEdit.php))
+(github: [reservationEdit.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationEdit.php)) | Link to the form (shell.hamk.fi)
 
 
 ### Feature 6
