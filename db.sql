@@ -10,6 +10,13 @@ CREATE TABLE IF NOT EXISTS `team18`.`xin_feng_branches` (
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
 
+INSERT INTO `team18`.`xin_feng_branches` (`id`, `name`,  `address`, `tel`, `email`, `url`) 
+VALUES 
+    ('Helsinki', '020 1234567', 'helsinki@msb.com', 'Manner 13, 00100 Helsinki', 'https://www.msb.com'),
+    ('Tampere', '020 7654321', 'tempere@msb.com', 'Hämeen 25, 33200 Tampere', 'https://tampere.msb.com'),
+    ('Turku', '020 9876543', 'turku@msb.com', 'Aurakatu 5B, 20100 Turku', 'https://turku.msb.com'),
+    ('Oulu', '020 1239876', 'oulu@msb.com', 'Isokatu 56, 90100 Oulu', 'https://oulu.msb.com');
+
 
 /* Xingxing Wang */
 CREATE TABLE IF NOT EXISTS `team18`.`xingxing_menuItems` (
