@@ -127,7 +127,7 @@ List and describe any forms that have been created as part of your project. Incl
 
 - Form 1 (Created By Xin FENG): Form Name: xin_feng_branches_form, Link to the related code file (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 2 (Created By Jin LU): Form Name: reservationForm, Link to the related code file (github)([reservation.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservation.php)) | Link to the form (shell.hamk.fi). | Validations Applied
-- Form 3 (Created By Jin LU): Form Name: reservationEditForm, Link to the related code file (github)([reservationEdit.php]: https://github.com/DanielF2002/PHP_team18/blob/main/reservationEdit.php) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 3 (Created By Jin LU): Form Name: reservationEditForm, Link to the related code file (github)([reservationEdit.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationEdit.php)) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 4 (Created By Mu ZHAO): Form Name: Feedback, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 5 (Created By Xingxing WANG): Form Name: MenuSearch, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 
@@ -139,7 +139,7 @@ List and describe any forms that have been created as part of your project. Incl
 List any tables that you have created in the project work
 
 - Table 1 (Created By Xin FENG): Table Name: xin_feng_branches| Link to the related code file (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | Link to the table (shell.hamk.fi).
-- Table 2 (Created By Jin LU): Table Name: jinLu_reservationInfo | Link to the related code file (github)([reservation.php]:https://github.com/DanielF2002/PHP_team18/blob/main/adminReservation.php) | Link to the table (shell.hamk.fi).
+- Table 2 (Created By Jin LU): Table Name: jinLu_reservationInfo | Link to the related code file (github)([reservation.php](https://github.com/DanielF2002/PHP_team18/blob/main/adminReservation.php))| Link to the table (shell.hamk.fi).
 - Table 3 (Created By Mu ZHAO): Table Name: Feedback | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 - Table 4 (Created By Xingxing WANG): Table Name: Menu | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 
