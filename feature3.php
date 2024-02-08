@@ -72,12 +72,12 @@ function branchesParsePost()
 function branchesGetHeaderProperties()
 {
     global $_POST;
-    if ($_POST["mode"] == "insert") {
-        return ["Add A New Branch", "Add a new branch in this page", "Add a new branch here:"];
-    } else if ($_POST["mode"] == "update") {
+    if ($_POST["mode"] == "update") 
+    {
         return ["Modify A Branch", "Modify a branch in this page", "Modify a branch here:"];
-    } else {
-        return;
+    } else
+    {
+        return ["Add A New Branch", "Add a new branch in this page", "Add a new branch here:"];
     }
 }
 
