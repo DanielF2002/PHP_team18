@@ -37,9 +37,9 @@ In this section, list and describe the features or functionality that you are wo
 - [ ] Feature 3 Xin FENG: New/edit a branch page, and database modification operations.
 - [ ] Feature 4 Jin LU: Online Reservation
 - [ ] Feature 5 Jin LU: Reservation management
-- [ ] Feature 6 Mu ZHAO: Online feedback
-- [ ] Feature 7 Mu ZHAO: Reviews presentation
-- [ ] Feature 8 Mu ZHAO: Admin feedback management
+- [ ] Feature 6 Mu ZHAO: Online  feedback
+- [ ] Feature 7 Mu ZHAO: Display user feedback  
+- [ ] Feature 8 Mu ZHAO: Feedback management
 - [ ] Feature 9 Xingxing WANG: Menu presentation
 - [ ] Feature 10 Xingxing WANG: Admin menu management
 - [ ] Feature 11 Xingxing WANG: Menu search
@@ -83,15 +83,25 @@ Reservation management. A page for admin to check, search, modify and cancel a r
 
 ### Feature 6
 
-Reviews presention. A page for user to read the reviews, includes a table, and database interaction.
+A page for user to submit the feedback inforamtion, includes a table, and database interaction.
+- **Form** for users to submit the feedback information, all datas go to muZhao_feedback table. Validation function in **Javascript** to validate the form.(feedback.php)
+(github: [feedback.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedback.php)) | Link to the form (shell.hamk.fi)
 
 ### Feature 7
 
-Reviews presention. A page for user to read the reviews.
+Display users feedback. A page for user to read the reviews.
+The goal is to implement the 'read' functionality in CRUD".
+(github: [feedback.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedback.php)) | Link to the form (shell.hamk.fi)
+
 
 ### Feature 8
 
-Admin feedback management. A page for admin, includes query, search, delete, and modify a table.
+
+Feedback management. A page for admin, includes query, search, delete, and modify a table.
+- **Form** for admin to edit the selected data.
+- **Table** displaying all feedback for the admin's review, allowing the admin to perform CRUD operations on the "muZhao_feedback" table.
+(github: [feedbackAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedbackAdmin.php)) | Link to the form (shell.hamk.fi)
+
 
 ### Feature 9
 
