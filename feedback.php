@@ -77,7 +77,7 @@ include "layout/header.php";
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="card-body">
-                            <h2 class="card-title">Mina1</h2>
+                            <h2 class="card-title">变量</h2>
                             <p class="mt-3 card-text text-center col-10 col-lg-9 mx-auto">Visiting this fine dining restaurant was an
                                 unforgettable culinary journey. From the moment I stepped in, I was captivated
                                 by its elegant decor and warm ambiance. The attentiveness and professionalism of
