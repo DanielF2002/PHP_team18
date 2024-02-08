@@ -1,6 +1,6 @@
 <?php $pageTitle = "Branches Management";
 $pageDescription = "Manage the branches";
-$pageAdmin = true;
+$pageAdmin = true; // footer.php need this variable to switch the nav links.
 include "layout/header.php"; ?>
 <main>
     <h1>Branches Management: </h1>

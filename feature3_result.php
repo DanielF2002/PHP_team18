@@ -1,6 +1,6 @@
 <?php $pageTitle = "Branches Management";
 $pageDescription = "Manage the branches";
-$pageAdmin = true;
+$pageAdmin = true; // footer.php need this variable to switch the nav links.
 
 if (isset($_POST["mode"])) { // Only show page when mode is set.
     // Use $_POST to determine the operaton requet type: INSERT, UPDATE, or DELETE.

@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST["mode"])) {
     // Use $_POST["mode"] to determine the operation request is INSERT or UPDATE.
-    $pageAdmin = true;
+    $pageAdmin = true; // footer.php need this variable to switch the nav links.
     // Set page properites by different POST mode.
     list($pageTitle, $pageDescription, $branchesH1) = branchesGetProperties();
     // Get id from $_Post when mode is update.
@@ -14,7 +14,7 @@ if (isset($_POST["mode"])) {
     echo '
     <main>
         <div class="container row d-lg-flex align-items-center">
-            <form class="col-12 col-lg-6" method="post" action="feature3_result.php">
+            <form class="col-12 col-lg-6" method="post" id="branch_Form" action="feature3_result.php">
                 <h1>' . $branchesH1 . '</h1>
                 <input type="hidden" name="id" value="'. $branchesId .'">
                 <div class="form-group">
@@ -34,12 +34,12 @@ if (isset($_POST["mode"])) {
                     <input type="url" class="form-control" id="url" name="url" ' . $branchesUrl . '>
                 </div>
                 <div class="form-group">
-                    <label for="add" class="fs-5">Address</label>
+                    <label for="address" class="fs-5">Address</label>
                     <input type="text" class="form-control" id="address" name="address" ' . $branchesAddress . '>
                 </div>
                 <input type="hidden" name="mode" value="'.$_POST["mode"].'">
                 <div class="d-grid">
-                    <button type="submit" name="submit" class="btn btn-primary btn-block">Submit</button>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
                 </div>
             </form>
             <aside class="col-lg-6 d-none d-lg-block">
@@ -64,23 +64,28 @@ if (isset($_POST["mode"])) {
                     var email = document.getElementById("email").value;
                     var tel = document.getElementById("tel").value;
                     var address = document.getElementById("address").value;
-                    if (name.length < 2) {
-                        alert("The length of name is too short, please recomfirm your input..");
+                    var url = document.getElementById("url").value;
+                    if (name.trim() === "") {
+                        alert("The name can NOT be empty.");
                         return false;
                     }
-                    if (!tel.trim() == “”) {
-                        alert("Please input a valid telephone number.");
-                        return false;
-                    }
-                    if (address.length < 5) {
-                        alert("The address is too short, please recomfirm your input.");
-                        return false;
-                    }
-                    if (!email.trim() == “” || !email.includes(“@”)) {
+                    if (email.trim() === "" || !email.includes("@")) {
                         alert("Please enter a valid email address.");
                         return false;
                     }
-                    this.submit();
+                    if (tel.trim() === "") {
+                        alert("The telephone can NOT be empty.");
+                        return false;
+                    }
+                    if (!url.startsWith("http")) {
+                        alert("Please enter a URL starting with http.");
+                        return false;
+                    }
+                    if (address.trim() === "") {
+                        alert("The address can NOT be empty.");
+                        return false;
+                    }
+                    document.getElementById("branch_Form").submit();
                 });
             });
         </script>
