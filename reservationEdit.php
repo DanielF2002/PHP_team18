@@ -46,6 +46,7 @@
 <?php $pageTitle = "Reservation";
 $pageDescription = "Reserve table for your dinner at Midnight Sun Bistro.";
 $pageCssFilename = "reservation";
+$pageAdmin = true;
 include "layout/header.php"; ?>
   
 <main>

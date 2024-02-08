@@ -1,15 +1,16 @@
 <?php $pageTitle = "Booking Management";
 $pageDescription = "Manage reservations made by customers.";
 $pageCssFilename = "reservation";
+$pageAdmin = true;
 include "layout/header.php"; ?>
 <main>
     <div class="searchbar">
         <h1>Reservation Management</h1>        
         <div class="navbar bg-body-tertiary">
             <div class="container-fluid" id="searchbar">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
-                    <button class="btn btn-outline-success" id="searchButton" type="submit">Search</button>
+                <form id="searchForm" class="d-flex" role="search">
+                    <input class="form-control me-2" name="searchText" type="search" placeholder="Search by name or ID" aria-label="Search" id="searchText">
+                    <button class="btn btn-outline-success" name="search_button" id="searchButton" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -41,9 +42,20 @@ include "layout/header.php"; ?>
                         }
                     }
                 }
-
+                    
+                
                 $sql = "SELECT * FROM jinLu_bookinginfo";
-                $result = $conn->query($sql);
+                    
+                if ($_SERVER["REQUEST_METHOD"] == "GET") {
+                    if (isset($_GET['search_button'])) {
+                        $searchValue = $_GET["searchText"];
+                        $sql = "SELECT * FROM jinLu_bookinginfo WHERE name LIKE '%$searchValue%' OR id= '$searchValue'";
+                    }
+                }
+                
+                
+
+                $result = $conn->query($sql);        
                 if ($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {
                         echo "<tr>";
@@ -67,16 +79,45 @@ include "layout/header.php"; ?>
                         echo "<td>" . $row["guestNumber"] . "</td>";
                         echo "<td>" . $row["date"] . "</td>";
                         echo "<td>" . $row["email"] . "</td>";
-        
+
                         echo "</tr>";
-                    }
+                    } 
                 } else {
                     echo "0 results";
                 }
-                $conn->close();
+            $conn->close();
             ?>
         </tbody>
     </table>
-</main>    
+</main> 
+<footer class="row text-center">
+        <div class="col-12 col-lg-4">
+            <h3>HOURS</h3>
+            <p>Mon--Sat 17-23</p>
+            <p>Sunday Closed</p>
+        </div>
+        <div class="col-12 col-lg-4">
+            <h3>LOCATION</h3>
+            <p>Linnankatu 9</p>
+            <p>13100</p>
+            <p>Helsinki</p>
+        </div>
+        <div class="col-12 col-lg-4">
+            <h3>CONTACT</h3>
+            <p><a href="mailto:info@midnightsun.fi">info@midnightsun.fi</a></p>
+            <div id="social-media">
+                <a href="https://www.facebook.com" target="_blank"><img src="layout/images/facebook.png"
+                        alt="facebook logo" /></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="layout/images/instagram.png"
+                        alt="instagram logo" /></a>
+                <a href="https://www.tiktok.com" target="_blank"><img src="layout/images/tiktok.png"
+                        alt="tiktok logo" /></a>
+            </div>
+        </div>
+    </footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 </html>
