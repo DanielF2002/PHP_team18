@@ -61,7 +61,7 @@ There are 3 buttons: insert, update and delete.
 A **form** for admin to insert, update the branch. The update feature can ONLY valid when admin clicking the update button on feature2.
 A feedback page to return all admin modifications to the database, and logic of database insert, update, and delete.
 - **Form** xin_feng_branches_form with **Validation** feature by **Javascript**.
-- **Insert**, **Edit**, and **Delete** the database table xin_feng_branches.
+- **Insert**, **filter**, **Edit**, **Delete**, the database table xin_feng_branches.
 
 ### Feature 4
 
