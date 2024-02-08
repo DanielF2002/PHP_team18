@@ -34,7 +34,7 @@ include "layout/header.php"; ?>
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     if (isset($_POST['delete_button'])) {
                         $deleteFormValue = $_POST["deleteForm"];
-                        $sql = "DELETE FROM jinLu_bookinginfo WHERE id = $deleteFormValue";
+                        $sql = "DELETE FROM jinLu_reservationInfo WHERE id = $deleteFormValue";
                         if ($conn->query($sql) === TRUE) {
                             echo "Record deleted successfully";
                         } else {
@@ -44,12 +44,12 @@ include "layout/header.php"; ?>
                 }
                     
                 
-                $sql = "SELECT * FROM jinLu_bookinginfo";
+                $sql = "SELECT * FROM jinLu_reservationInfo";
                     
                 if ($_SERVER["REQUEST_METHOD"] == "GET") {
                     if (isset($_GET['search_button'])) {
                         $searchValue = $_GET["searchText"];
-                        $sql = "SELECT * FROM jinLu_bookinginfo WHERE name LIKE '%$searchValue%' OR id= '$searchValue'";
+                        $sql = "SELECT * FROM jinLu_reservationInfo WHERE name LIKE '%$searchValue%' OR id= '$searchValue'";
                     }
                 }
                 

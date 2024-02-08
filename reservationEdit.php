@@ -11,7 +11,7 @@
         $email = $input['email'];
         $modifiedId = $input['id'];
 
-        $sql = "UPDATE jinLu_bookinginfo 
+        $sql = "UPDATE jinLu_reservationInfo 
             SET name = '$name', guestNumber = '$guestsCount', date = '$date', email = '$email'
             WHERE id = $modifiedId";
 
@@ -28,7 +28,7 @@
 
     $modifiedId = $_GET['id'];
 
-    $searchSql = "SELECT * FROM jinLu_bookinginfo WHERE id = $modifiedId";
+    $searchSql = "SELECT * FROM jinLu_reservationInfo WHERE id = $modifiedId";
     $result = $conn->query($searchSql);
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
@@ -51,7 +51,7 @@ include "layout/header.php"; ?>
   
 <main>
     <div class = "container row">
-    <form id="reservationForm" class="col-lg-6 bookform custom-padding" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+    <form id="reservationEditForm" class="col-lg-6 bookform custom-padding" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
             <input type="hidden" name="id" value=<?php echo $modifiedId; ?>>
             <h1>Reserve a seat</h1>
             <div>

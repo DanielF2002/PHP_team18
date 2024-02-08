@@ -10,6 +10,13 @@ CREATE TABLE IF NOT EXISTS `team18`.`xin_feng_branches` (
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
 
+INSERT INTO `team18`.`xin_feng_branches` (`id`, `name`,  `address`, `tel`, `email`, `url`) 
+VALUES 
+    ('Helsinki', '020 1234567', 'helsinki@msb.com', 'Manner 13, 00100 Helsinki', 'https://www.msb.com'),
+    ('Tampere', '020 7654321', 'tempere@msb.com', 'Hämeen 25, 33200 Tampere', 'https://tampere.msb.com'),
+    ('Turku', '020 9876543', 'turku@msb.com', 'Aurakatu 5B, 20100 Turku', 'https://turku.msb.com'),
+    ('Oulu', '020 1239876', 'oulu@msb.com', 'Isokatu 56, 90100 Oulu', 'https://oulu.msb.com');
+
 
 /* Xingxing Wang */
 CREATE TABLE IF NOT EXISTS `team18`.`xingxing_menuItems` (
@@ -39,3 +46,13 @@ VALUES
     ('House Red/White Wine', 'Beverages', 'Varietal options available', FALSE, 5.00),
     ('Bistro Signature Cocktail', 'Beverages', 'Seasonal ingredients, crafted by our mixologist', NULL, 8.00),
     ('Freshly Brewed Coffee/Tea', 'Beverages', 'Regular or decaf coffee, assorted teas', NULL, 3.00);
+
+/* Jin Lu */
+-- DROP TABLE `team18`.`jinLu_reservationInfo`;
+CREATE TABLE `team18`.`jinLu_reservationInfo` (
+    `id` INT NOT NULL AUTO_INCREMENT , 
+    `name` VARCHAR(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL , 
+    `guestNumber` INT NOT NULL , `date` DATE NOT NULL , 
+    `email` VARCHAR(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL , 
+    PRIMARY KEY (`id`)) 
+    ENGINE = InnoDB;
