@@ -87,19 +87,23 @@ Reviews presention. A page for user to read the reviews.
 
 ### Feature 8
 
-Admin menu management. A page for admin, includes query, search, delete, and modify a table.
+Admin feedback management. A page for admin, includes query, search, delete, and modify a table.
 
 ### Feature 9
 
-Menu presention. A page for user to read the menu, includes a table, and database interaction.
+Menu page for customer. 
+- **Table** for customer to read menu items from database table xingxing_menuItems.
+- **Filter** the database table xingxing_menuItems by category.
 
 ### Feature 10
 
-Admin menu management. A page for admin to query, search, delete, and modify a table..
+Menu management for admin.
+- **Table** for admin to read, update, delete the the menu items from database table xingxing_menuItems.
+- **Form** for admin to insert menu items.
 
 ### Feature 11
 
-Menu search. A page for user to filter the database by keyword.
+Menu search for admin in menu management page.
 
 ---
 
@@ -113,6 +117,7 @@ List the database tables that are part of your project.
 - Table 4 (Created By Xingxing WANG): MENU
 > Include the ER Diagram of the database.
 ![ER Xin_Feng_Table](images/er_xin_feng_branches.png)
+![ER xingxing_menuItem](images/er_xingxing_menuItems.png)
 
 ---
 
