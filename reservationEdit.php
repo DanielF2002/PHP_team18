@@ -51,7 +51,7 @@ include "layout/header.php"; ?>
   
 <main>
     <div class = "container row">
-    <form id="reservationForm" class="col-lg-6 bookform custom-padding" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+    <form id="reservationEditForm" class="col-lg-6 bookform custom-padding" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
             <input type="hidden" name="id" value=<?php echo $modifiedId; ?>>
             <h1>Reserve a seat</h1>
             <div>
