@@ -40,7 +40,7 @@ function formValidation(){
     .then(response => response.json())
     .then (data => {
         if(data.status === "success"){
-        alert(data.message + " We will contact you one day before your appoinment!" );
+        alert(data.message + ". We will contact you two days before your appoinment via email!" );
         window.location.href = refreshUrl;}
     })  
     .catch((error) => {
