@@ -31,7 +31,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 <?php $pageTitle = "Feedback";
 $pageDescription = "Feedback at Midnight Sun Bistro.";
 $pageCssFilename = "feedback";
-include "layout/header.php"; ?>
+include "layout/header.php"; 
+?>
 <main>
     <div class="container row">
         <form class="col-12 col-lg-6" method="post" id = "feedbackForm" action="">
