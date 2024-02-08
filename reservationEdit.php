@@ -11,7 +11,7 @@
         $email = $input['email'];
         $modifiedId = $input['id'];
 
-        $sql = "UPDATE jinLu_bookinginfo 
+        $sql = "UPDATE jinLu_reservationInfo 
             SET name = '$name', guestNumber = '$guestsCount', date = '$date', email = '$email'
             WHERE id = $modifiedId";
 
@@ -28,7 +28,7 @@
 
     $modifiedId = $_GET['id'];
 
-    $searchSql = "SELECT * FROM jinLu_bookinginfo WHERE id = $modifiedId";
+    $searchSql = "SELECT * FROM jinLu_reservationInfo WHERE id = $modifiedId";
     $result = $conn->query($searchSql);
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();

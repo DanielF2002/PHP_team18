@@ -11,7 +11,7 @@
 
         include 'db.php';
 
-    $sql = "INSERT INTO jinLu_bookinginfo (name, guestNumber, date, email)
+    $sql = "INSERT INTO jinLu_reservationInfo (name, guestNumber, date, email)
             VALUES ('$name', '$guestsCount', '$date', '$email')";
 
     if ($conn->query($sql) === TRUE) {
@@ -37,7 +37,7 @@ include "layout/header.php"; ?>
             <h1>Reserve a seat</h1>
             <div>
                 <label for="name" class="form-label fs-5">Name</label>
-                <input type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Please enter your name" required>
+                <input type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Please provide your first name" required>
             </div>
             <div class="mb-3">
                 <label for="guestsCount" class="form-label fs-5">Number of Guests</label>

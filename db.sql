@@ -39,3 +39,13 @@ VALUES
     ('House Red/White Wine', 'Beverages', 'Varietal options available', FALSE, 5.00),
     ('Bistro Signature Cocktail', 'Beverages', 'Seasonal ingredients, crafted by our mixologist', NULL, 8.00),
     ('Freshly Brewed Coffee/Tea', 'Beverages', 'Regular or decaf coffee, assorted teas', NULL, 3.00);
+
+/* Jin Lu */
+-- DROP TABLE `team18`.`jinLu_reservationInfo`;
+CREATE TABLE `team18`.`jinLu_reservationInfo` (
+    `id` INT NOT NULL AUTO_INCREMENT , 
+    `name` VARCHAR(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL , 
+    `guestNumber` INT NOT NULL , `date` DATE NOT NULL , 
+    `email` VARCHAR(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL , 
+    PRIMARY KEY (`id`)) 
+    ENGINE = InnoDB;
