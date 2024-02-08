@@ -15,11 +15,11 @@
                 <h3>CONTACT</h3>
                 <p><a href="mailto:info@midnightsun.fi">info@midnightsun.fi</a></p>
                 <div id="social-media">
-                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"
+                    <a href="https://www.facebook.com" target="_blank"><img src="layout/images/facebook.png"
                             alt="facebook logo" /></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png"
+                    <a href="https://www.instagram.com/" target="_blank"><img src="layout/images/instagram.png"
                             alt="instagram logo" /></a>
-                    <a href="https://www.tiktok.com" target="_blank"><img src="images/tiktok.png"
+                    <a href="https://www.tiktok.com" target="_blank"><img src="layout/images/tiktok.png"
                             alt="tiktok logo" /></a>
                 </div>
             </div>
