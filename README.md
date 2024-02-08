@@ -47,21 +47,21 @@ In this section, list and describe the features or functionality that you are wo
 ### Feature 1
 
 A simple **table-like** page to show branches to visitors.
-- **Selects** and prints data from database table xin_feng_branches.
+- **Selects** and prints data from database table xin_feng_branches. (in feature1.php)
 
 ### Feature 2
 
-A **table** for admin to manage the branches.
-There are 3 buttons: insert, update and delete.
-- **Table** xin_feng_branches for **Selecting** the data from database table xin_feng_branches.
-- **Javascript** to add a comfirm button when admin clicking the delete button.
+- **table** for admin to manage the branches. The data is form database table xin_feng_branches.
+There are 3 buttons: insert, update and delete. (in feature2.php)
+- **Javascript** to add a comfirm button when admin clicking the delete button. (in feature2.php)
 
 ### Feature 3
 
 A **form** for admin to insert, update the branch. The update feature can ONLY valid when admin clicking the update button on feature2.
 A feedback page to return all admin modifications to the database, and logic of database insert, update, and delete.
-- **Form** xin_feng_branches_form with **Validation** feature by **Javascript**.
-- **Insert**, **filter**, **Edit**, **Delete**, the database table xin_feng_branches.
+- **Form** xin_feng_branches_form with **Validation** feature by **Javascript**. (in feature3.php)
+- **Filter** the database table xin_feng_branches. (in feature3.php)
+- **Insert**, **Edit**, **Delete**, the database table xin_feng_branches. (in feature3_result.php)
 
 ### Feature 4
 
@@ -117,7 +117,7 @@ List the database tables that are part of your project.
 
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
-- Form 1 (Created By Xin FENG): Form Name: xin_feng_branches_form, Link to the related code file ([github]:https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 1 (Created By Xin FENG): Form Name: xin_feng_branches_form, Link to the related code file (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 2 (Created By Jin LU): Form Name: Reservation, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 3 (Created By Jin LU): Form Name: Booking modification, Link to the related code file (github)([github]:https://github.com/DanielF2002/PHP_team18/blob/main/reservation.php) & ([github]: https://github.com/DanielF2002/PHP_team18/blob/main/editReservation.php) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 4 (Created By Mu ZHAO): Form Name: Feedback, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
@@ -130,7 +130,7 @@ List and describe any forms that have been created as part of your project. Incl
 
 List any tables that you have created in the project work
 
-- Table 1 (Created By Xin FENG): Table Name: xin_feng_branches| Link to the related code file ([github]:https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php) | Link to the table (shell.hamk.fi).
+- Table 1 (Created By Xin FENG): Table Name: xin_feng_branches| Link to the related code file (github: [feature2.php]:(https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | Link to the table (shell.hamk.fi).
 - Table 2 (Created By Jin LU): Table Name: jinLu_bookinginfo | Link to the related code file (github)([github]:https://github.com/DanielF2002/PHP_team18/blob/main/adminReservation.php) | Link to the table (shell.hamk.fi).
 - Table 3 (Created By Mu ZHAO): Table Name: Feedback | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 - Table 4 (Created By Xingxing WANG): Table Name: Menu | Link to the related code file (github) | Link to the table (shell.hamk.fi).
