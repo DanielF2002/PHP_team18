@@ -1,6 +1,7 @@
 <?php $pageTitle = "Booking Management";
 $pageDescription = "Manage reservations made by customers.";
 $pageCssFilename = "reservation";
+$pageAdmin = true;
 include "layout/header.php"; ?>
 <main>
     <div class="searchbar">
