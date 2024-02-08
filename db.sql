@@ -56,3 +56,15 @@ CREATE TABLE `team18`.`jinLu_reservationInfo` (
     `email` VARCHAR(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL , 
     PRIMARY KEY (`id`)) 
     ENGINE = InnoDB;
+
+
+/* Mu Zhao */
+-- DROP TABLE 'team18','muZhao_feedback';
+CREATE TABLE `muZhao_feedback` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `email` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `topic` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `message` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL
+  PRIMARY KEY (`ID`)) 
+  ENGINE=InnoDB ;
