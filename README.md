@@ -114,12 +114,11 @@ List the database tables that are part of your project.
 
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
-- Form 1 (Created By Xin FENG): Form Name: xin_feng_branches_form, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-- Form 2 (Created By Xin FENG): Form Name: Restaurant modification, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-- Form 3 (Created By Jin LU): Form Name: Reservation, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-- Form 4 (Created By Jin LU): Form Name: Booking modification, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-- Form 5 (Created By Mu ZHAO): Form Name: Feedback, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-- Form 6 (Created By Xingxing WANG): Form Name: MenuSearch, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 1 (Created By Xin FENG): Form Name: xin_feng_branches_form, Link to the related code file ([github]:[https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php]) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 2 (Created By Jin LU): Form Name: Reservation, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 3 (Created By Jin LU): Form Name: Booking modification, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 4 (Created By Mu ZHAO): Form Name: Feedback, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 5 (Created By Xingxing WANG): Form Name: MenuSearch, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 
 
 ---
@@ -128,7 +127,7 @@ List and describe any forms that have been created as part of your project. Incl
 
 List any tables that you have created in the project work
 
-- Table 1 (Created By Xin FENG): Table Name: xin_feng_branches| Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 1 (Created By Xin FENG): Table Name: xin_feng_branches| Link to the related code file ([github]:[https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php]) | Link to the table (shell.hamk.fi).
 - Table 2 (Created By Jin LU): Table Name: Reservation | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 - Table 3 (Created By Mu ZHAO): Table Name: Feedback | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 - Table 4 (Created By Xingxing WANG): Table Name: Menu | Link to the related code file (github) | Link to the table (shell.hamk.fi).
