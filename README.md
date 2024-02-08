@@ -64,7 +64,7 @@ A feedback page to return all admin modifications to the database, and logic of 
 - **Form** xin_feng_branches_form with **Validation** feature by **Javascript**. (in feature3.php)
 - **Filter** the database table xin_feng_branches. (in feature3.php)
 - **Insert**, **Edit**, **Delete**, the database table xin_feng_branches. (in feature3_result.php)
-- (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php)) [feature3_result.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3_result.php))| Link to the form (shell.hamk.fi)
+- (github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php) [feature3_result.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3_result.php))| Link to the form (shell.hamk.fi)
 
 ### Feature 4
 
