@@ -70,15 +70,15 @@ A feedback page to return all admin modifications to the database, and logic of 
 
 Reservation page is for customer to make their bookings online. 
 - **Form** for users to submit their booking details online, data goes to jinLu_reservationInfo table. It is validated and by submitted by **Javascript**.
-(github:[reservation.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservation.php)) | Link to the form (shell.hamk.fi)
+(github: [reservation.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservation.php)) | Link to the form (shell.hamk.fi)
 
 ### Feature 5
 
 Reservation management. A page for admin to check, search, modify and cancel a reservation.
 - **Table** to show all booking information to admin. All data are connected with table jinLu_reservationInfo. admin can also make changes (CRUD) to the bookinginfo table.
-(github [reservationAdmin.php]: https://github.com/DanielF2002/PHP_team18/blob/main/reservationAdmin.php) 
+(github: [reservationAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationAdmin.php)) | Link to the form (shell.hamk.fi)
 - **Form** for admin to edit the selected data.
-(github [reservationEdit.php]: https://github.com/DanielF2002/PHP_team18/blob/main/reservationEdit.php) 
+(github: [reservationEdit.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationEdit.php)) | Link to the form (shell.hamk.fi)
 
 
 ### Feature 6
@@ -117,7 +117,7 @@ List the database tables that are part of your project.
 - Table 4 (Created By Xingxing WANG): MENU
 > Include the ER Diagram of the database.
 ![ER Xin_Feng_Table](images/er_xin_feng_branches.png)
-![ER jinLu_reservationInfo]
+![ER jinLu_reservationInfo](/images/jinLu_reservationInfo.png)
 
 ---
 
