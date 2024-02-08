@@ -33,8 +33,8 @@ This website features user management (including administrator permission manage
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
 - [ ] Feature 1 Xin FENG: Branches information presentation.
-- [ ] Feature 2 Xin FENG: Restaurant information query.
-- [ ] Feature 3 Xin FENG: Restaurant information modification.
+- [ ] Feature 2 Xin FENG: Branches information management page.
+- [ ] Feature 3 Xin FENG: New/edit a branch page, and database modification operations.
 - [ ] Feature 4 Jin LU: Online Reservation
 - [ ] Feature 5 Jin LU: Reservation management
 - [ ] Feature 6 Mu ZHAO: Online feedback
@@ -47,13 +47,15 @@ In this section, list and describe the features or functionality that you are wo
 ### Feature 1
 
 A simple **table-like** page to show branches to visitors.
-- **Selects** and prints data from database table xin_feng_branches. (in feature1.php)
+- **Selects** reads and prints data from database table xin_feng_branches. (in feature1.php)
+(github: [feature1.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature1.php)) | Link to the form (shell.hamk.fi)
 
 ### Feature 2
 
-- **table** for admin to manage the branches. The data is form database table xin_feng_branches.
+- **table** for admin to manage the branches. The data is from database table xin_feng_branches.
 There are 3 buttons: insert, update and delete. (in feature2.php)
 - **Javascript** to add a comfirm button when admin clicking the delete button. (in feature2.php)
+(github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | Link to the form (shell.hamk.fi)
 
 ### Feature 3
 
@@ -62,6 +64,7 @@ A feedback page to return all admin modifications to the database, and logic of 
 - **Form** xin_feng_branches_form with **Validation** feature by **Javascript**. (in feature3.php)
 - **Filter** the database table xin_feng_branches. (in feature3.php)
 - **Insert**, **Edit**, **Delete**, the database table xin_feng_branches. (in feature3_result.php)
+- (github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php) [feature3_result.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3_result.php))| Link to the form (shell.hamk.fi)
 
 ### Feature 4
 
@@ -130,7 +133,7 @@ List and describe any forms that have been created as part of your project. Incl
 
 List any tables that you have created in the project work
 
-- Table 1 (Created By Xin FENG): Table Name: xin_feng_branches| Link to the related code file (github: [feature2.php]:(https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | Link to the table (shell.hamk.fi).
+- Table 1 (Created By Xin FENG): Table Name: xin_feng_branches| Link to the related code file (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | Link to the table (shell.hamk.fi).
 - Table 2 (Created By Jin LU): Table Name: jinLu_bookinginfo | Link to the related code file (github)([github]:https://github.com/DanielF2002/PHP_team18/blob/main/adminReservation.php) | Link to the table (shell.hamk.fi).
 - Table 3 (Created By Mu ZHAO): Table Name: Feedback | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 - Table 4 (Created By Xingxing WANG): Table Name: Menu | Link to the related code file (github) | Link to the table (shell.hamk.fi).
