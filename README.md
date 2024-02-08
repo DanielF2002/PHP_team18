@@ -105,8 +105,8 @@ List the database tables that are part of your project.
 - Table 2 (Created By Jin LU): RESERVATION
 - Table 3 (Created By Mu ZHAO): FEEDBACK
 - Table 4 (Created By Xingxing WANG): MENU
-![ER Xin_Feng_Table](images/er_xin_feng_branches.png)
 > Include the ER Diagram of the database.
+![ER Xin_Feng_Table](images/er_xin_feng_branches.png)
 
 ---
 
