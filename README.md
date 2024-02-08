@@ -118,8 +118,8 @@ List the database tables that are part of your project.
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
 - Form 1 (Created By Xin FENG): Form Name: xin_feng_branches_form, Link to the related code file (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | Link to the form (shell.hamk.fi). | Validations Applied
-- Form 2 (Created By Jin LU): Form Name: Reservation, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-- Form 3 (Created By Jin LU): Form Name: Booking modification, Link to the related code file (github)([github]:https://github.com/DanielF2002/PHP_team18/blob/main/reservation.php) & ([github]: https://github.com/DanielF2002/PHP_team18/blob/main/editReservation.php) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 2 (Created By Jin LU): Form Name: jinLu_bookinginfo, Link to the related code file (github)([reservation.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservation.php)) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 3 (Created By Jin LU): Form Name: Booking modification, Link to the related code file (github)([reservationEdit.php]: https://github.com/DanielF2002/PHP_team18/blob/main/reservationEdit.php) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 4 (Created By Mu ZHAO): Form Name: Feedback, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 5 (Created By Xingxing WANG): Form Name: MenuSearch, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 
