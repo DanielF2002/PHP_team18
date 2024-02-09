@@ -81,6 +81,12 @@ include "layout/header.php"; ?>
                 <p>* All reservations will require a €200 non-refundable deposit per person. We accept modifications up to eight days prior to your reservation.</p>
             </aside>
         </div>
+        <div id="userSubmitConfirm-container" class="submitConfirm-container">
+            <div class="confirmBookingU">                
+                <p>Thank you for your reservation. We will email you two days before your booking time.</p>
+                <button id="confirmButtonU" class="btn btn-primary">OK</button>
+            </div>
+        </div>
     </div>         
 </main>
     <footer class="row text-center">

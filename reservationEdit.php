@@ -11,9 +11,7 @@
         $email = $input['email'];
         $modifiedId = $input['id'];
 
-        $sql = "UPDATE jinLu_reservationInfo 
-            SET name = '$name', guestNumber = '$guestsCount', date = '$date', email = '$email'
-            WHERE id = $modifiedId";
+        $sql = "UPDATE jinLu_reservationInfo SET name = '$name', guestNumber = '$guestsCount', `date` = '$date', email = '$email' WHERE id = $modifiedId";
 
         if ($conn->query($sql) === TRUE) {
             $response = array('message' => 'sucessfully edit!','status' => 'success');
@@ -51,7 +49,7 @@ include "layout/header.php"; ?>
   
 <main>
     <div class = "container row">
-    <form id="reservationEditForm" class="col-lg-6 bookform custom-padding" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+    <form id="reservationForm" class="col-lg-6 bookform custom-padding" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
             <input type="hidden" name="id" value=<?php echo $modifiedId; ?>>
             <h1>Reserve a seat</h1>
             <div>
@@ -73,7 +71,14 @@ include "layout/header.php"; ?>
             <div class="d-grid">
                 <button type="submit" id="submitForm" name="submit" class="btn btn-primary d-grid">Confirm</button>
             </div>
-        </form>      
+        </form> 
+        <div id="adminSubmitConfirm-container" class="submitConfirm-container">
+            <div class="confirmBookingA">  
+                <input type="hidden" name="adminSubmitConfirm" value="adminSubmitConfirm">              
+                <p>Edit successfully.</p>
+                <button id="confirmButtonA" class="btn btn-primary">OK</button>
+            </div>
+    </div>     
 </main>
     <footer class="row text-center">
         <div class="col-12 col-lg-4">
