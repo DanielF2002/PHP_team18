@@ -4,21 +4,23 @@ $pageAdmin = true; // footer.php need this variable to switch the nav links.
 include "layout/header.php"; ?>
 <main>
     <h1>Branches Management: </h1>
+    <div class="table-responsive">
     <table class="table text-center"> <!-- **Table feature.** -->
         <thead>
             <tr>
                 <th class="fs-4" scope="col">Actions</th>
                 <th class="fs-4" scope="col">Name</th>
-                <th class="fs-4 d-none d-lg-table-cell" scope="col">Tel</th>
-                <th class="fs-4 d-none d-lg-table-cell" scope="col">Email</th>
-                <th class="fs-4 d-none d-lg-table-cell" scope="col">Address</th>
-                <th class="fs-4 d-none d-lg-table-cell" scope="col">Url</th>
+                <th class="fs-4" scope="col">Tel</th>
+                <th class="fs-4" scope="col">Email</th>
+                <th class="fs-4" scope="col">Address</th>
+                <th class="fs-4" scope="col">Url</th>
             </tr>
         </thead>
         <tbody>
             <?php componentTbody(); ?> <!-- Fetch all data from db and show tbody. -->
         </tbody>
     </table>
+</div>
     <form action="feature3.php" method="post" class="d-inline">
         <input type="hidden" name="mode" value="insert">
         <button type="submit" class="btn">Add a new branch</button>
@@ -66,19 +68,19 @@ function componentRow($item)
             <form action="feature3.php" method="post" class="d-inline">
                 <input type="hidden" name="id" value="'.$item["id"].'">
                 <input type="hidden" name="mode" value="update">
-                <button type="submit" class="btn">Edit</button>
+                <button type="submit" class="btn mt-1 mb-1">Edit</button>
             </form>
             <form action="feature3_result.php" method="post" class="d-inline">
                 <input type="hidden" name="id" value="'.$item["id"].'">
                 <input type="hidden" name="mode" value="delete">
-                <button type="submit" class="btn" onclick="return confirmDelete()">Delete</button>
+                <button type="submit" class="btn mt-1 mb-1" onclick="return confirmDelete()">Delete</button>
             </form>
         </td>
         <td>'.$item["name"].'</td>
-        <td class="d-none d-lg-table-cell">'.$item["tel"].'</td>
-        <td class="d-none d-lg-table-cell">'.$item["email"].'</td>
-        <td class="d-none d-lg-table-cell">'.$item["address"].'</td>
-        <td class="d-none d-lg-table-cell">'.$item["url"].'</td>
+        <td>'.$item["tel"].'</td>
+        <td>'.$item["email"].'</td>
+        <td>'.$item["address"].'</td>
+        <td>'.$item["url"].'</td>
     </tr>';
 }
 ?>
