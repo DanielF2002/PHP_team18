@@ -10,6 +10,7 @@ CREATE TABLE IF NOT EXISTS `team18`.`xin_feng_branches` (
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
 
+
 INSERT INTO `team18`.`xin_feng_branches` (`name`,  `tel`, `email`, `address`, `url`) 
 VALUES 
     ('Helsinki', '020 1234567', 'helsinki@msb.com', 'Manner 13, 00100 Helsinki', 'https://www.msb.com'),
