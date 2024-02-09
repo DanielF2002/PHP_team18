@@ -1,10 +1,8 @@
 # Exercise 5: Readme.md
 
-***Welcome to the task README!***
+# Midnight Sun Bistro - Team 18
 
-# Project Name - Team 18
-
-This website features user management (including administrator permission management), menu and menu management, reservations and reservation management, as well as the display and management of website feedback and reviews.
+This website is created for a restaurant, features include links to other branch restaurants, menu display, online reservation, and a feedback and review system, and management functionalities.
 
 ## Table of Contents
 - [Exercise 5: Readme.md](#exercise-5-readmemd)
