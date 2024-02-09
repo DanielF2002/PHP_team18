@@ -1,10 +1,8 @@
 # Exercise 5: Readme.md
 
-***Welcome to the task README!***
+# Midnight Sun Bistro - Team 18
 
-# Project Name - Team 18
-
-This website features user management (including administrator permission management), menu and menu management, reservations and reservation management, as well as the display and management of website feedback and reviews.
+This website is created for a restaurant, features include links to other branch restaurants, menu display, online reservation, and a feedback and review system, and management functionalities.
 
 ## Table of Contents
 - [Exercise 5: Readme.md](#exercise-5-readmemd)
@@ -21,7 +19,6 @@ This website features user management (including administrator permission manage
     - [Feature 8](#feature-8)
     - [Feature 9](#feature-9)
     - [Feature 10](#feature-10)
-    - [Feature 11](#feature-11)
   - [Database Tables](#database-tables)
   - [Created Forms](#created-forms)
   - [Created Tables](#created-tables)
@@ -47,6 +44,7 @@ In this section, list and describe the features or functionality that you are wo
 
 A simple **table-like** page to show branches to visitors.
 - **Selects** reads and prints data from database table xin_feng_branches. (in feature1.php)
+
 (github: [feature1.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature1.php)) | Link to the form (shell.hamk.fi)
 
 ### Feature 2
@@ -54,6 +52,7 @@ A simple **table-like** page to show branches to visitors.
 - **table** for admin to manage the branches. The data is from database table xin_feng_branches.
 There are 3 buttons: insert, update and delete. (in feature2.php)
 - **Javascript** to add a comfirm button when admin clicking the delete button. (in feature2.php)
+
 (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | Link to the form (shell.hamk.fi)
 
 ### Feature 3
@@ -63,7 +62,8 @@ A feedback page to return all admin modifications to the database, and logic of 
 - **Form** xin_feng_branches_form with **Validation** feature by **Javascript**. (in feature3.php)
 - **Filter** the database table xin_feng_branches. (in feature3.php)
 - **Insert**, **Edit**, **Delete**, the database table xin_feng_branches. (in feature3_result.php)
-- (github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php) [feature3_result.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3_result.php))| Link to the form (shell.hamk.fi)
+
+(github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php) [feature3_result.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3_result.php))| Link to the form (shell.hamk.fi)
 
 ### Feature 4
 
@@ -122,10 +122,8 @@ List the database tables that are part of your project.
 - Table 3 (Created By Mu ZHAO): FEEDBACK
 - Table 4 (Created By Xingxing WANG): MENU
 > Include the ER Diagram of the database.
-![ER Xin_Feng_Table](images/er_xin_feng_branches.png)
-![ER xingxing_menuItem](images/er_xingxing_menuItems.png)
-![ER jinLu_reservationInfo](/images/jinLu_reservationInfo.png)
-![ER muZhao_feedback](/images/er_muzhao_feedback.png)
+The ER Diagram of the database:
+![ER Table](images/er.png)
 
 
 ---

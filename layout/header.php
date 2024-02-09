@@ -29,7 +29,7 @@
     <div class="container">
         <header>
             <div class="container header-logo text-center">
-                <a href="index.html" class="brand-section">
+                <a href="index.php" class="brand-section">
                     <p class="logo-part-1">The pure taste of</p>
                     <p class="logo-part-2">Midnight Sun Bistro</p>
                 </a>

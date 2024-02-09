@@ -10,7 +10,8 @@ CREATE TABLE IF NOT EXISTS `team18`.`xin_feng_branches` (
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
 
-INSERT INTO `xin_feng_branches` (`id`, `name`,  `address`, `tel`, `email`, `url`) 
+
+INSERT INTO `team18`.`xin_feng_branches` (`name`,  `tel`, `email`, `address`, `url`) 
 VALUES 
     ('Helsinki', '020 1234567', 'helsinki@msb.com', 'Manner 13, 00100 Helsinki', 'https://www.msb.com'),
     ('Tampere', '020 7654321', 'tempere@msb.com', 'Hämeen 25, 33200 Tampere', 'https://tampere.msb.com'),
@@ -65,6 +66,6 @@ CREATE TABLE `muZhao_feedback` (
   `name` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   `email` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   `topic` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
-  `message` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL
+  `message` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   PRIMARY KEY (`ID`)) 
   ENGINE=InnoDB ;
