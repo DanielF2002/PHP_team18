@@ -60,18 +60,6 @@ include "layout/header.php";
                 <button type="submit" class="btn btn-primary btn-block">Submit</button>
             </div>
         </form>
-
-
-        <aside class="col-lg-6 d-none d-lg-block">
-            <div class="logo col-12">
-                <p class="logo-part-1">
-                    The pure taste of
-                </p>
-                <p class="logo-part-2">
-                    Midnight Sun Bistro
-                </p>
-            </div>
-        </aside>
     </div>
 </main>
 <footer class="row text-center">
