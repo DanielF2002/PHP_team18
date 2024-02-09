@@ -63,7 +63,7 @@ include "layout/header.php"; ?>
                         echo "<td>";
                         echo "<div class='button-container'>";
 
-                        echo "<a  class='btn btn-primary' id='edit' href='editReservation.php?id=" . $row["id"] . "'>Edit</a>";
+                        echo "<a  class='btn btn-primary' id='edit' href='reservationEdit.php?id=" . $row["id"] . "'>Edit</a>";
 
 
                         echo "<form name='deleteForm' method='post' action='" . htmlspecialchars($_SERVER['PHP_SELF']) . "'>";
