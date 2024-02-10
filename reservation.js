@@ -27,8 +27,8 @@ function formValidation(){
     fetchUrl = "reservation.php";
     refreshUrl = "reservation.php";
     if (element) {
-        fetchUrl = "editReservation.php";
-        refreshUrl = "adminReservation.php";
+        fetchUrl = "reservationEdit.php";
+        refreshUrl = "reservationAdmin.php";
     }
     fetch(fetchUrl, {
         method: "POST",
@@ -38,15 +38,31 @@ function formValidation(){
         body: JSON.stringify(formDataJSON), 
     })
     .then(response => response.json())
-    .then (data => {
-        if(data.status === "success"){
-        alert(data.message + ". We will contact you two days before your appoinment via email!" );
-        window.location.href = refreshUrl;}
-    })  
+    .then(data => {
+        console.log('Success:', data);
+        if(data.status === "success" && fetchUrl === "reservation.php"){
+            let showContainer = document.getElementById('userSubmitConfirm-container');
+            showContainer.style.display = "block";
+            let closeButton = document.getElementById('confirmButtonU');  
+            closeButton.onclick = function() {
+                showContainer.style.display = "none";
+                window.location.href = refreshUrl; 
+            };
+        } else if(data.status === "success" && fetchUrl === "reservationEdit.php") {
+            let showContainer = document.getElementById('adminSubmitConfirm-container');
+            showContainer.style.display = "block";
+            let closeButton = document.getElementById('confirmButtonA');
+            closeButton.onclick = function() {
+                showContainer.style.display = "none";
+                window.location.href = refreshUrl; 
+            };
+        }
+         
+    })
     .catch((error) => {
         console.error('Error:', error);
     });
-}
+};
 
 var form = document.getElementById('reservationForm');
 form.addEventListener('submit', formValidation);
