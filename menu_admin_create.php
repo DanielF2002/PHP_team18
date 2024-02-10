@@ -1,9 +1,10 @@
 <?php
 $pageTitle = "Create New Menu Item";
 $pageDescription = "Add a new menu item to the Midnight Sun Bistro menu";
+$pageCssFilename = "menu";
 $pageAdmin = true;
-include_once 'layout/header.php';
-require_once 'db_wxx.php';
+include 'layout/header.php';
+include 'db.php';
 
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -27,22 +28,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
 }
 ?>
-
+<hr>
 <div class="container">
-    <h2>Create New Menu Item</h2>
+    <h1>Create New Menu Item</h1>
     <?php if (isset($message)) : ?>
         <div class="alert alert-<?php echo isset($error) ? 'danger' : 'success'; ?>" role="alert">
             <?php echo $message; ?>
         </div>
     <?php endif; ?>
+
+    <!-- Form for adding menu item -->
     <form method="post">
         <div class="mb-3">
             <label for="item_name" class="form-label">Item Name</label>
-            <input type="text" class="form-control" id="item_name" name="item_name" required>
+            <input type="text" class="form-control" id="item_name" name="item_name" placeholder="Name" required>
         </div>
         <div class="mb-3">
             <label for="category" class="form-label">Category</label>
-            <input type="text" class="form-control" id="category" name="category" required>
+            <input type="text" class="form-control" id="category" name="category" placeholder="Category" required>
         </div>
         <div class="mb-3">
             <label for="ingredients" class="form-label">Ingredients</label>
@@ -54,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">Price</label>
-            <input type="number" class="form-control" id="price" name="price" step="0.01" required>
+            <input type="number" class="form-control" id="price" name="price" step="0.01" placeholder="0.00" required>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
