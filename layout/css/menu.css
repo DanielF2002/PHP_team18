@@ -1,34 +1,22 @@
-.menu-cards a,
-.menu-cards a:hover,
-.menu-cards a:active,
-.menu-cards a:visited {
-    text-decoration: none;
-}
 
-.menu-item {
-    margin: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content:flex-start;
-    
-}
 
-.menu-border {
-    max-width: 70%;
-    border-radius: 10px;
+#admin-menu{
+    height: 60rem;
+    overflow: auto;
+    border-radius: 1rem;
     border: 1px solid #B49646;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-.menu-item img {
-    max-width: 12rem;
-    padding: 2rem 2rem;
-    border-radius: 2.5rem;
-    margin-right: 1rem;
+#menu-items {
+    text-align: center;
 }
 
-
+.form-control{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
 
 @media (min-width: 992px) {
     main {
