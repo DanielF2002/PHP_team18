@@ -3,8 +3,8 @@ $pageTitle = "Menu Management";
 $pageDescription = "Manage the menu";
 $pageAdmin = true;
 
-include_once 'layout/header.php';
-include 'db_wxx.php';
+include 'layout/header.php';
+include 'db.php';
 
 // Check if item_id is provided in the URL
 if (isset($_GET['item_id'])) {
@@ -54,7 +54,7 @@ if (isset($_GET['item_id'])) {
 
         if ($query) {
             echo "Menu Item Modified Successfully <br>";
-            echo "<a href='feature10_menu_admin.php'> Back To Menu List </a>";
+            echo "<a href='feature9_10_menu_admin.php'> Back To Menu List </a>";
             // If you want to redirect to update page after updating
             // header("location: update.php");
         } else {

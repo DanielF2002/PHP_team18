@@ -2,9 +2,8 @@
 $pageTitle = "Menu Management";
 $pageDescription = "Manage the menu";
 $pageAdmin = true;
-include_once 'layout/header.php';
-include 'db_wxx.php';
-
+include 'layout/header.php';
+include 'db.php';
 
 
 $sql = "select * from xingxing_menuItems";

@@ -2,8 +2,8 @@
 $pageTitle = "Create New Menu Item";
 $pageDescription = "Add a new menu item to the Midnight Sun Bistro menu";
 $pageAdmin = true;
-include_once 'layout/header.php';
-require_once 'db_wxx.php';
+include 'layout/header.php';
+include 'db.php';
 
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

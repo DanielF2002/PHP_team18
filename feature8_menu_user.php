@@ -3,7 +3,7 @@ $pageTitle = "Menu Of Midnight Sun Bistro";
 $pageDescription = "Read the menu";
 $pageAdmin = false;
 include 'layout/header.php';
-require_once 'db_wxx.php';
+include 'db.php';
 
 // Fetch unique categories from the xingxing_menuItems table
 $sqlCategories = "SELECT DISTINCT category FROM xingxing_menuItems";
@@ -74,7 +74,7 @@ if ($resultCategories->num_rows > 0) {
         document.querySelectorAll('.category-item').forEach(item => {
             item.addEventListener('click', function() {
                 var category = this.getAttribute('data-category');
-                window.location.href = 'feature9_menu_user.php?category=' + encodeURIComponent(category);
+                window.location.href = 'feature8_menu_user.php?category=' + encodeURIComponent(category);
             });
         });
     });
