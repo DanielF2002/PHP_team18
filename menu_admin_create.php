@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php endif; ?>
 
     <!-- Form for adding menu item -->
-    <form method="post">
+    <form method="post" id="menu_insert">
         <div class="mb-3">
             <label for="item_name" class="form-label">Item Name</label>
             <input type="text" class="form-control" id="item_name" name="item_name" placeholder="Name" required>
@@ -62,5 +62,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
+
+<!--Form validation -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let form = document.getElementById('menu_insert');
+
+        form.addEventListener('submit', function(event) {
+            let item_name = document.getElementById('item_name').value.trim();
+            let category = document.getElementById('category').value.trim();
+            let ingredients = document.getElementById('ingredients').value.trim();
+            let vegetarian = document.getElementById('vegetarian').checked;
+            let price = document.getElementById('price').value.trim();
+
+            if (!item_name || !category || !price) {
+                event.preventDefault(); // Prevent form submission
+                alert('Item Name, Category, and Price are required fields.');
+                return;
+            }
+
+            if (isNaN(price)) {
+                event.preventDefault(); // Prevent form submission
+                alert('Price must be a valid number.');
+                return;
+            }
+
+            if (parseFloat(price) <= 0) {
+                event.preventDefault(); // Prevent form submission
+                alert('Price must be greater than zero.');
+                return;
+            }
+        });
+    });
+
+</script>
 
 <?php include 'layout/footer.php' ?>
