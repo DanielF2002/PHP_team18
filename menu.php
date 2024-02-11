@@ -52,7 +52,7 @@ if ($resultCategories->num_rows > 0) {
                         echo "<h4>" . $row['item_name'] . "</h4>" ."<br>";
                         echo "<p><strong>Ingredients:</strong> " . $row['ingredients'] . "</p>"."<br>";
                         echo "<p><strong>Vegetarian:</strong> " . ($row['vegetarian'] ? 'Yes' : 'No') . "</p>"."<br>";
-                        echo "<p><strong>Price:</strong> $" . number_format($row['price'], 2) . "</p>"."<br>";
+                        echo "<p><strong>Price:</strong> €" . number_format($row['price'], 2) . "</p>"."<br>";
                         echo "</div>";
                     }
                 } else {
