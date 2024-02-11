@@ -43,7 +43,7 @@ else {
 $conn->close();
 ?>
 
-<!-- Form for updating menu item -->
+
 <hr>
 <div class="container">
     <h1>Update Menu Item</h1>
@@ -53,8 +53,8 @@ $conn->close();
         </div>
     <?php endif; ?>
 
-
-<form method="post" action="">
+<!-- Form for updating menu item -->
+<form method="post" id="menu_update">
     <div>
         <?php if (isset($message)) {
             echo $message;
