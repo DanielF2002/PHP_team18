@@ -1,5 +1,13 @@
 <?php 
+$pageTitle = "Feedback";
+$pageDescription = "Feedback at Midnight Sun Bistro.";
+$pageCssFilename = "feedback";
+$pageAdmin = true;
+include "layout/header.php"; 
 include "db.php";
+?>
+
+<?php 
 $id = $_GET['id'];
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $name = $_POST['name'];
@@ -15,8 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     }else{
         $msg = "Error updating" . $conn->error;
     }
-    $conn->close();
-    return;
+    // $conn->close();
+
  }
     
     $searchsql = "SELECT * FROM muZhao_feedback WHERE ID = $id";
@@ -31,13 +39,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
     $conn->close();
     ?>
-<?php 
-$pageTitle = "Feedback";
-$pageDescription = "Feedback at Midnight Sun Bistro.";
-$pageCssFilename = "feedback";
-include "layout/header.php"; 
-?>
+
 <main>
+    <div class="return">
+        <?php if (isset($msg)){
+            echo $msg;
+        } ?>
+    </div>
     <div class="container row">
         <form name="feedbackForm" class="col-12 col-lg-6" method="post" id = "feedbackForm" action="">
             <h1>Please leave your feedback:</h1>

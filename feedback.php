@@ -75,5 +75,5 @@ include "layout/header.php";
     </div>
 </main>
 <?php
-include 'layout/footer.php';
+$pageJs="feedback"; include 'layout/footer.php';
 ?>
