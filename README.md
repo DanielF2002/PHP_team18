@@ -110,7 +110,7 @@ Menu management for admin.
 - **Table** for admin to read, add, update, delete the the menu items in database table xingxing_menuItems.
   [menu_admin.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin.php)
 - **Forms** for admin to insert and upfate menu items.
-  [menu_admin_create.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin_create.php)
+  [menu_admin_create.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin_create.php),
   [menu_admin_update.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin_update.php)
 - **Javascript** to validate form input and add a comfirm button for deleting menu item. 
 
