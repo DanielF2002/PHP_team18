@@ -1,10 +1,8 @@
 # Exercise 5: Readme.md
 
-***Welcome to the task README!***
+# Midnight Sun Bistro - Team 18
 
-# Project Name - Team 18
-
-This website features user management (including administrator permission management), menu and menu management, reservations and reservation management, as well as the display and management of website feedback and reviews.
+This website is created for a restaurant, features include links to other branch restaurants, menu display, online reservation, and a feedback and review system, and management functionalities.
 
 ## Table of Contents
 - [Exercise 5: Readme.md](#exercise-5-readmemd)
@@ -21,7 +19,6 @@ This website features user management (including administrator permission manage
     - [Feature 8](#feature-8)
     - [Feature 9](#feature-9)
     - [Feature 10](#feature-10)
-    - [Feature 11](#feature-11)
   - [Database Tables](#database-tables)
   - [Created Forms](#created-forms)
   - [Created Tables](#created-tables)
@@ -47,6 +44,7 @@ In this section, list and describe the features or functionality that you are wo
 
 A simple **table-like** page to show branches to visitors.
 - **Selects** reads and prints data from database table xin_feng_branches. (in feature1.php)
+
 (github: [feature1.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature1.php)) | Link to the form (shell.hamk.fi)
 
 ### Feature 2
@@ -54,6 +52,7 @@ A simple **table-like** page to show branches to visitors.
 - **table** for admin to manage the branches. The data is from database table xin_feng_branches.
 There are 3 buttons: insert, update and delete. (in feature2.php)
 - **Javascript** to add a comfirm button when admin clicking the delete button. (in feature2.php)
+
 (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | Link to the form (shell.hamk.fi)
 
 ### Feature 3
@@ -63,7 +62,8 @@ A feedback page to return all admin modifications to the database, and logic of 
 - **Form** xin_feng_branches_form with **Validation** feature by **Javascript**. (in feature3.php)
 - **Filter** the database table xin_feng_branches. (in feature3.php)
 - **Insert**, **Edit**, **Delete**, the database table xin_feng_branches. (in feature3_result.php)
-- (github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php) [feature3_result.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3_result.php))| Link to the form (shell.hamk.fi)
+
+(github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php) [feature3_result.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3_result.php))| Link to the form (shell.hamk.fi)
 
 ### Feature 4
 
@@ -101,15 +101,22 @@ Menu page for customer.
 - **Table** for customer to read menu items from database table xingxing_menuItems.
 - **Filter** the database table xingxing_menuItems by category.
 
+(github: [menu.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu.php)) | Link to the form (shell.hamk.fi)
+
 ### Feature 9
 
 Menu management for admin.
 - **Table** for admin to read, update, delete the the menu items from database table xingxing_menuItems.
 - **Form** for admin to insert menu items.
+- **Javascript** to add a comfirm button when admin deleting menu item. 
+
+(github: [menu_admin.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin.php)) | Link to the form (shell.hamk.fi)
 
 ### Feature 10
 
-Menu search for admin in menu management page.
+- Menu search for admin in menu management page.
+
+(github: [menu_admin.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin.php)) | Link to the form (shell.hamk.fi)
 
 ---
 
@@ -122,10 +129,8 @@ List the database tables that are part of your project.
 - Table 3 (Created By Mu ZHAO): FEEDBACK
 - Table 4 (Created By Xingxing WANG): MENU
 > Include the ER Diagram of the database.
-![ER Xin_Feng_Table](images/er_xin_feng_branches.png)
-![ER xingxing_menuItem](images/er_xingxing_menuItems.png)
-![ER jinLu_reservationInfo](/images/jinLu_reservationInfo.png)
-![ER muZhao_feedback](/images/er_muzhao_feedback.png)
+The ER Diagram of the database:
+![ER Table](images/er.png)
 
 
 ---
@@ -139,8 +144,8 @@ List and describe any forms that have been created as part of your project. Incl
 - Form 3 (Created By Jin LU): Form Name: reservationEditForm, Link to the related code file (github)([reservationEdit.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationEdit.php)) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 4 (Created By Mu ZHAO): Form Name: feedbackForm, Link to the related code file (github) ([feedback.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedback.php))| Link to the form (shell.hamk.fi). | Validations Applied
 - Form 5 (Created By Mu ZHAO): Form Name: feedbackForm, Link to the related code file (github) ([feedbackEdit.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedbackEdit.php))| Link to the form (shell.hamk.fi). | Validations Applied
-- Form 6 (Created By Xingxing WANG): Form Name: MenuSearch, Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-
+- Form 6 (Created By Xingxing WANG): Form Name: menu_insert, Link to the related code file (github: [menu_admin_create.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin_create.php)) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 7 (Created By Xingxing WANG): Form Name: menu_update, Link to the related code file (github: [menu_admin_update.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin_update.php)) | Link to the form (shell.hamk.fi). | Validations Applied
 
 ---
 
@@ -151,6 +156,6 @@ List any tables that you have created in the project work
 - Table 1 (Created By Xin FENG): Table Name: xin_feng_branches| Link to the related code file (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | Link to the table (shell.hamk.fi).
 - Table 2 (Created By Jin LU): Table Name: jinLu_reservationInfo | Link to the related code file (github)([reservation.php](https://github.com/DanielF2002/PHP_team18/blob/main/adminReservation.php))| Link to the table (shell.hamk.fi).
 - Table 3 (Created By Mu ZHAO): Table Name: muZhao_feedback | Link to the related code file (github)([feedbackAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedbackAdmin.php)) | Link to the table (shell.hamk.fi).
-- Table 4 (Created By Xingxing WANG): Table Name: Menu | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 4 (Created By Xingxing WANG): Table Name: Menu | Link to the related code file (github: [menu_admin.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin.php)) | Link to the table (shell.hamk.fi).
 
 ---
