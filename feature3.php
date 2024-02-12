@@ -18,22 +18,27 @@ include "layout/header.php"; ?>
             <div class="form-group">
                 <label for="name" class="fs-5">Name</label>
                 <input type="text" class="form-control" id="name" name="name" <?php echo $branchesName ?>>
+                <p id="name-err" class="text-warning"></p>
             </div>
             <div class="form-group">
                 <label for="email" class="fs-5">Email</label>
                 <input type="email" class="form-control" id="email" name="email" <?php echo $branchesEmail ?>>
+                <p id="email-err" class="text-warning"></p>
             </div>
             <div class="form-group">
                 <label for="tel" class="fs-5">Telephone</label>
                 <input type="tel" class="form-control" id="tel" name="tel" <?php echo $branchesTel ?>>
+                <p id="tel-err" class="text-warning"></p>
             </div>
             <div class="form-group">
                 <label for="url" class="fs-5">Url</label>
                 <input type="url" class="form-control" id="url" name="url" <?php echo $branchesUrl ?>>
+                <p id="url-err" class="text-warning"></p>
             </div>
             <div class="form-group">
                 <label for="address" class="fs-5">Address</label>
                 <input type="text" class="form-control" id="address" name="address" <?php echo $branchesAddress ?>>
+                <p id="address-err" class="text-warning"></p>
             </div>
             <input type="hidden" name="mode" value="<?php echo $_POST["mode"] ?>">
             <div class="d-grid">
@@ -51,45 +56,9 @@ include "layout/header.php"; ?>
             </div>
         </aside>
     </div>
-    <script> // ** Javascript Validation feature. **
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelector("form").addEventListener("submit", function (e) {
-                e.preventDefault();
-                var name = document.getElementById("name").value;
-                var email = document.getElementById("email").value;
-                var tel = document.getElementById("tel").value;
-                var address = document.getElementById("address").value;
-                var url = document.getElementById("url").value;
-                if (name.trim() === "") {
-                    alert("The name can NOT be empty.");
-                    return false;
-                }
-                if (email.trim() === "" || !email.includes("@")) {
-                    alert("Please enter a valid email address.");
-                    return false;
-                }
-                if (tel.trim() === "") {
-                    alert("The telephone can NOT be empty.");
-                    return false;
-                }
-                if (!url.startsWith("http")) {
-                    alert("Please enter a URL starting with http.");
-                    return false;
-                }
-                if (address.trim() === "") {
-                    alert("The address can NOT be empty.");
-                    return false;
-                }
-                document.getElementById("branch_Form").submit();
-            });
-        });
-    </script>
-    <noscript>
-        Your browser does not support JavaScript, or it is disabled. Please check your browser settings.
-    </noscript>
 </main>
 
-<?php include "layout/footer.php"; ?>
+<?php $pageJs = "feature3_validation"; include "layout/footer.php"; ?>
 
 <?php
 
