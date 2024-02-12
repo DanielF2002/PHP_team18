@@ -58,7 +58,7 @@
             $adminNav = array(
                 array("name" => "Branches", "link" => "feature2"),
                 array("name" => "Menu", "link" => "menu_admin"),
-                array("name" => "Bookings", "link" => "reservation_admin"),
+                array("name" => "Bookings", "link" => "reservationAdmin"),
                 array("name" => "Feedback", "link" => "feedbackAdmin"),
             );
             global $pageAdmin;
