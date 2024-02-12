@@ -1,12 +1,12 @@
-<?php $pageTitle = "Booking Management";
-$pageDescription = "Manage reservations made by customers.";
-$pageCssFilename = "reservation";
+<?php $pageTitle = "Feedback Management";
+$pageDescription = "Manage feedback";
+$pageCssFilename = "feedback";
 $pageAdmin = true;
 include "layout/header.php"; ?>
 <main>
     <div class="searchbar">
-        <h1>Reservation Management</h1>        
-        <div class="navbar bg-body-tertiary">
+        <h1>Feedback Management</h1>        
+        <div class="navbar bg-body-tertiary searchbarwhite">
             <div class="container-fluid" id="searchbar">
                 <form id="searchForm" class="d-flex" role="search">
                     <input class="form-control me-2" name="searchText" type="search" placeholder="Search by name or ID" aria-label="Search" id="searchText">
@@ -15,6 +15,7 @@ include "layout/header.php"; ?>
             </div>
         </div>
     </div>
+    
     <table class="table">
         <thead>
             <tr>
@@ -29,6 +30,7 @@ include "layout/header.php"; ?>
         </thead>
         <tbody>
             <?php 
+            // testing
                 include "db.php";
 
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
