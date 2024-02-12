@@ -140,7 +140,7 @@ The ER Diagram of the database:
 
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
-- Form 1 (Created By Xin FENG): Form Name: xin_feng_branches_form, Link to the related code file (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 1 (Created By Xin FENG): Form Name: xin_feng_branches_form, Link to the related code file (github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php)) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 2 (Created By Jin LU): Form Name: reservationForm, Link to the related code file (github)([reservation.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservation.php)) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 3 (Created By Jin LU): Form Name: reservationEditForm, Link to the related code file (github)([reservationEdit.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationEdit.php)) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 4 (Created By Mu ZHAO): Form Name: feedbackForm, Link to the related code file (github) ([feedback.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedback.php))| Link to the form (shell.hamk.fi). | Validations Applied
