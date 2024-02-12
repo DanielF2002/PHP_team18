@@ -111,8 +111,18 @@ function validateAddress() {
     }
 }
 
+// Submit only when passed all validations.
+function validateForm(e) {
+    if  (validateName() && validateEmail() && validateTel() && validateUrl() && validateAddress()) {
+        return true;
+    }
+    e.preventDefault();
+    return false;
+}
+
 document.getElementById("name").addEventListener("input", validateName);
 document.getElementById("email").addEventListener("input", validateEmail);
 document.getElementById("tel").addEventListener("input", validateTel);
 document.getElementById("url").addEventListener("input", validateUrl);
 document.getElementById("address").addEventListener("input", validateAddress);
+document.querySelector('form').addEventListener('submit', validateForm);
