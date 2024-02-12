@@ -15,6 +15,7 @@ include "layout/header.php"; ?>
             </div>
         </div>
     </div>
+    
     <table class="table">
         <thead>
             <tr>
@@ -29,6 +30,7 @@ include "layout/header.php"; ?>
         </thead>
         <tbody>
             <?php 
+            // testing
                 include "db.php";
 
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
