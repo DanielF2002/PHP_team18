@@ -32,8 +32,8 @@ In this section, list and describe the features or functionality that you are wo
 - [x] Feature 1 Xin FENG: Branches information presentation. (github: [feature1.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature1.php)) | shell
 - [x] Feature 2 Xin FENG: Branches information management page. (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | shell
 - [x] Feature 3 Xin FENG: New/edit a branch page, and database modification operations. (github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php) [feature3_result.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3_result.php) [feature3_validation.js](https://github.com/DanielF2002/PHP_team18/blob/main/js/feature3_validation.js)) | shell
-- [x] Feature 4 Jin LU: Online Reservation (github: [reservation.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservation.php)) | (shell: [reservationAdmin.php](http://shell.hamk.fi/~jin23000/PHP_team18/reservation.php))
-- [x] Feature 5 Jin LU: Reservation management (github: [reservationAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationAdmin.php)) | (shell: [reservation.php](http://shell.hamk.fi/~jin23000/PHP_team18/reservation.php))
+- [x] Feature 4 Jin LU: Online Reservation (github: [reservation.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservation.php)) | (shell: [reservation.php](http://shell.hamk.fi/~jin23000/PHP_team18/reservation.php))
+- [x] Feature 5 Jin LU: Reservation management (github: [reservationAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationAdmin.php)) | (shell: [reservationAdmin.php](http://shell.hamk.fi/~jin23000/PHP_team18/reservation.php))
 - [ ] Feature 6 Mu ZHAO: Online  feedback  
 - [ ] Feature 7 Mu ZHAO: Feedback management
 - [ ] Feature 8 Xingxing WANG: Menu presentation
