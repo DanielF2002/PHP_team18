@@ -2,38 +2,40 @@ main .logo {
     margin-top: 15rem;
 }
 
-.cards {
-    margin-top: 2rem;
-    max-width: 100%;
-    overflow-x: scroll;
-}
 
-.card {
-    background: #B49646;
-    width: 17rem;
-    flex-shrink: 0;
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
+#searchbar{
+    background-color: #0A1414;
+    height: 3.125rem;
 }
 
 
-
-.card-title {
-    text-align: center;
+#searchText{
+    width: 30rem;
+    height: 2.5rem;
+    align-items: center;
+    margin-top: 0.25rem;
 }
 
-.card-body {
-    font-size: 1rem;
+
+#searchButton, #search{
+    margin-top: 0.25rem;
 }
 
-img {
-    max-width: 60%;
-    margin-top: 1rem;
+.searchbarwhite{
+    background-color: #0A1414 !important;
 }
 
-.carousel {
-    background-color: #343a40;
-    border-radius: 10px;
+.button-container {
+    display: flex; 
+    flex-direction: row;
+    align-items: center; 
+    
+}
+
+#delete, #edit {
+    width: 5rem;
+    margin: 0;
+
 }
 
 @media (min-width: 1200px) {
