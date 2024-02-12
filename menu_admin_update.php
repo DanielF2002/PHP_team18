@@ -61,21 +61,93 @@ $conn->close();
         } ?>
     </div>
     Name: <br>
-    <input class="form-control" type="text" name="item_name" value="<?php echo $row['item_name']; ?>"><br>
+    <input class="form-control" id="item_name" type="text" name="item_name" value="<?php echo $row['item_name']; ?>"><br>
+    <p id="nameError"></p>
+    
     Category:<br>
-    <input class="form-control" type="text" name="category" value="<?php echo $row['category']; ?>"><br>
+    <input class="form-control" id="category" type="text" name="category" value="<?php echo $row['category']; ?>"><br>
+    <p id="categoryError"></p>
     Ingredients:<br>
-    <input class="form-control" type="text" name="ingredients" value="<?php echo $row['ingredients']; ?>"><br>
+    <input class="form-control" id="ingredients" type="text" name="ingredients" value="<?php echo $row['ingredients']; ?>"><br>
+    <p id="ingredientsError"></p>
     Vegetarian:<br>
-    <select class="form-select" name="vegetarian">
+    <select class="form-control" id="vegetarian" name="vegetarian">
         <option value="1" <?php if ($row['vegetarian'] == 1) echo 'selected'; ?>>Yes</option>
         <option value="0" <?php if ($row['vegetarian'] == 0) echo 'selected'; ?>>No</option>
     </select><br>
+    <p id="vegetarianError"></p>
     Price:<br>
-    <input class="form-control" type="text" name="price" value="<?php echo $row['price']; ?>"><br>
+    <input class="form-control" id="price" type="text" name="price" value="<?php echo $row['price']; ?>"><br>
+    <p id="priceError"></p>
     <input class="btn btn-primary" type="submit" name="submit" value="Submit">
+    
 </form>
 <a class="btn btn-primary" role="button" href="menu_admin.php"> Back To Menu List </a>
+
+<script>
+    //function to validate name
+    function validateName(){
+        const name=document.getElementById("item_name").value;
+        const nameError = document.getElementById("nameError");
+        if (name.length < 2){
+            nameError.innerHTML = "Name must be more than 1 character."
+            return false;
+        }
+        else{
+            nameError.innerHTML = "";
+            return true;
+        }
+    }
+
+    //function to validate category
+    function validateCategory(){
+        const category=document.getElementById("category").value;
+        const categoryError = document.getElementById("categoryError");
+        if (!category){
+            categoryError.innerHTML = "Please enter the category."
+            return false;
+        }
+        else{
+            categoryError.innerHTML = "";
+            return true;
+        }
+    }
+
+    //function to validate ingredients
+    function validateIngredients(){
+        const ingredients=document.getElementById("ingredients").value;
+        const ingredientsError = document.getElementById("ingredientsError");
+        if (ingredients.length > 200){
+            ingredientsError.innerHTML = "No more than 200 characters."
+            return false;
+        }
+        else{
+            ingredientsError.innerHTML = "";
+            return true;
+        }
+    }
+
+
+    //function to validate price
+    function validatePrice(){
+        const price=document.getElementById("price").value;
+        const priceError = document.getElementById("priceError");
+        if (!price||price <= 0){
+            priceError.innerHTML = "Please enter valid price."
+            return false;
+        }
+        else{
+            priceError.innerHTML = "";
+            return true;
+        }
+    }
+
+    document.getElementById("item_name").addEventListener("input",validateName);
+    document.getElementById("category").addEventListener("input",validateCategory);
+    document.getElementById("ingredients").addEventListener("input",validateIngredients);
+    document.getElementById("price").addEventListener("input",validatePrice);
+
+</script>
 
 <?php
 
