@@ -32,8 +32,8 @@ In this section, list and describe the features or functionality that you are wo
 - [ ] Feature 1 Xin FENG: Branches information presentation.
 - [ ] Feature 2 Xin FENG: Branches information management page.
 - [ ] Feature 3 Xin FENG: New/edit a branch page, and database modification operations.
-- [ ] Feature 4 Jin LU: Online Reservation
-- [ ] Feature 5 Jin LU: Reservation management
+- [x] Feature 4 Jin LU: Online Reservation
+- [x] Feature 5 Jin LU: Reservation management
 - [ ] Feature 6 Mu ZHAO: Online  feedback  
 - [ ] Feature 7 Mu ZHAO: Feedback management
 - [ ] Feature 8 Xingxing WANG: Menu presentation

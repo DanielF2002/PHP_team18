@@ -18,12 +18,12 @@ include "layout/header.php"; ?>
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">Actions</th> 
-                <th scope="col">ID</th>
-                <th scope="col">Name</th>
-                <th scope="col">Guest Number</th>
-                <th scope="col">Date</th>
-                <th scope="col">Email</th>
+                <th scope="col" style="width: 230px; font-size: 20px;">Actions</th> 
+                <th scope="col" style="font-size: 20px;">ID</th>
+                <th scope="col" style="font-size: 20px;">Name</th>
+                <th scope="col" style="font-size: 20px;">Guest Number</th>
+                <th scope="col" style="font-size: 20px;">Date</th>
+                <th scope="col" style="font-size: 20px;">Email</th>
                 
             </tr>
         </thead>
@@ -90,34 +90,4 @@ include "layout/header.php"; ?>
         </tbody>
     </table>
 </main> 
-<footer class="row text-center">
-        <div class="col-12 col-lg-4">
-            <h3>HOURS</h3>
-            <p>Mon--Sat 17-23</p>
-            <p>Sunday Closed</p>
-        </div>
-        <div class="col-12 col-lg-4">
-            <h3>LOCATION</h3>
-            <p>Linnankatu 9</p>
-            <p>13100</p>
-            <p>Helsinki</p>
-        </div>
-        <div class="col-12 col-lg-4">
-            <h3>CONTACT</h3>
-            <p><a href="mailto:info@midnightsun.fi">info@midnightsun.fi</a></p>
-            <div id="social-media">
-                <a href="https://www.facebook.com" target="_blank"><img src="layout/images/facebook.png"
-                        alt="facebook logo" /></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="layout/images/instagram.png"
-                        alt="instagram logo" /></a>
-                <a href="https://www.tiktok.com" target="_blank"><img src="layout/images/tiktok.png"
-                        alt="tiktok logo" /></a>
-            </div>
-        </div>
-    </footer>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-</body>
-</html>
+<?php include 'layout/footer.php' ?>
