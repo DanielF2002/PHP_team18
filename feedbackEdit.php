@@ -9,8 +9,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $topic = $input['topic'];
     $message = $input['message'];
 
-
-    // testing
     include 'db.php';
 
     // Define an SQL query to insert data into the 'studentsinfo' table
@@ -70,7 +68,7 @@ function validateName() {
 const name=document.getElementById("name").value;
 const nameError = document.getElementById("nameError");
 if (name.length < 2 || name.length > 20){
-    nameError.innerHTML = "Name must be between 3 & 20 characters";
+    nameError.innerHTML = "Name must be between 2 & 20 characters";
     return false;
 }else{
     nameError.innerHTML="";
@@ -99,4 +97,6 @@ document.getElementById("name").addEventListener("input", validateName);
 document.getElementById("email").addEventListener("input", validateEmail);
 </script>
 
-<?php include"footer.php" ?>
+<?php
+include 'layout/footer.php';
+?>
