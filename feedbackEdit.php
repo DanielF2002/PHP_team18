@@ -9,6 +9,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $topic = $input['topic'];
     $message = $input['message'];
 
+
+    // testing
     include 'db.php';
 
     // Define an SQL query to insert data into the 'studentsinfo' table

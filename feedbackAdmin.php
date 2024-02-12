@@ -5,7 +5,7 @@ $pageAdmin = true;
 include "layout/header.php"; ?>
 <main>
     <div class="searchbar">
-        <h1>Reservation Management</h1>        
+        <h1>Feedback Management</h1>        
         <div class="navbar bg-body-tertiary searchbarwhite">
             <div class="container-fluid" id="searchbar">
                 <form id="searchForm" class="d-flex" role="search">
