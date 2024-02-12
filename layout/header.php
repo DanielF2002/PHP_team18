@@ -58,8 +58,8 @@
             $adminNav = array(
                 array("name" => "Branches", "link" => "feature2"),
                 array("name" => "Menu", "link" => "menu_admin"),
-                array("name" => "Bookings", "link" => "reservation_admin"),
-                array("name" => "Feedback", "link" => "feedback_admin"),
+                array("name" => "Bookings", "link" => "reservationAdmin"),
+                array("name" => "Feedback", "link" => "feedbackAdmin"),
             );
             global $pageAdmin;
             echo '<nav class="navbar navbar-expand"><ul class="navbar-nav d-flex justify-content-between w-100">';
