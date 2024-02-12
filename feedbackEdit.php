@@ -53,11 +53,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                 <label for="name" class="fs-5">Name</label>
                 <input type="text" name = "name" class="form-control" id="name" autocomplete="name"
                     value="<?php echo $fillName; ?>"placeholder="Please enter your name.">
+                    <span id="nameError"></span>
             </div>
             <div class="form-group">
                 <label for="email" class="fs-5">Email</label>
                 <input type="email" name = "email" class="form-control" id="email" autocomplete="email"
                 value="<?php echo $fillEmail; ?>" placeholder="yourname@email.com">
+                <span id="emailError"></span>
             </div>
             <div class="form-group">
                 <label for="topic" class="fs-5">Topic</label>
@@ -70,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
              placeholder="Leave your feedback here."><?php echo $fillMessage; ?></textarea>
             </div>
             <div class="d-grid">
-                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                <button type="submit" id="submitEdit" class="btn btn-primary btn-block">Submit</button>
             </div>
         </form>
     </div>
@@ -108,6 +110,15 @@ function validateEmail(){
 //event listeners for real time validation
 document.getElementById("name").addEventListener("input", validateName);
 document.getElementById("email").addEventListener("input", validateEmail);
+
+document.getElementById("feedbackForm").addEventListener("submit", function(event){
+    if(!validateName() || !validateEmail()){
+        alert("Please fill out all fields correctly");
+        event.preventDefault();
+        return false;
+    }
+})
+
 </script>
 
 <?php
