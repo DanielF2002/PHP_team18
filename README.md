@@ -29,9 +29,9 @@ This website is created for a restaurant, features include links to other branch
 
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
-- [ ] Feature 1 Xin FENG: Branches information presentation.
-- [ ] Feature 2 Xin FENG: Branches information management page.
-- [ ] Feature 3 Xin FENG: New/edit a branch page, and database modification operations.
+- [x] Feature 1 Xin FENG: Branches information presentation. (github: [feature1.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature1.php)) | shell
+- [x] Feature 2 Xin FENG: Branches information management page. (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | shell
+- [x] Feature 3 Xin FENG: New/edit a branch page, and database modification operations. (github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php) [feature3_result.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3_result.php) [feature3_validation.js](https://github.com/DanielF2002/PHP_team18/blob/main/js/feature3_validation.js)) | shell
 - [x] Feature 4 Jin LU: Online Reservation
 - [x] Feature 5 Jin LU: Reservation management
 - [ ] Feature 6 Mu ZHAO: Online  feedback  
@@ -43,7 +43,7 @@ In this section, list and describe the features or functionality that you are wo
 ### Feature 1
 
 A simple **table-like** page to show branches to visitors.
-- **Selects** reads and prints data from database table xin_feng_branches. (in feature1.php)
+- **Selects** and prints data from database table xin_feng_branches. (in feature1.php)
 
 (github: [feature1.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature1.php)) | Link to the form (shell.hamk.fi)
 
@@ -59,11 +59,12 @@ There are 3 buttons: insert, update and delete. (in feature2.php)
 
 A **form** for admin to insert, update the branch. The update feature can ONLY valid when admin clicking the update button on feature2.
 A feedback page to return all admin modifications to the database, and logic of database insert, update, and delete.
-- **Form** xin_feng_branches_form with **Validation** feature by **Javascript**. (in feature3.php)
+- **Form** xin_feng_branches_form. (in feature3.php)
+- **Validation** feature by **Javascript**. (in feature3_validation.js)
 - **Filter** the database table xin_feng_branches. (in feature3.php)
 - **Insert**, **Edit**, **Delete**, the database table xin_feng_branches. (in feature3_result.php)
 
-(github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php) [feature3_result.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3_result.php))| Link to the form (shell.hamk.fi)
+(github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php) [feature3_result.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3_result.php) [feature3_validation.js](https://github.com/DanielF2002/PHP_team18/blob/main/js/feature3_validation.js)) | Link to the form (shell.hamk.fi)
 
 ### Feature 4
 
