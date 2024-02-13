@@ -61,14 +61,14 @@ $conn->close();
         } ?>
     </div>
     Name: <br>
-    <input class="form-control" id="item_name" type="text" name="item_name" value="<?php echo $row['item_name']; ?>"><br>
+    <input class="form-control" id="item_name" type="text" required name="item_name" value="<?php echo $row['item_name']; ?>"><br>
     <p id="nameError"></p>
     
     Category:<br>
-    <input class="form-control" id="category" type="text" name="category" value="<?php echo $row['category']; ?>"><br>
+    <input class="form-control" id="category" type="text" required name="category" value="<?php echo $row['category']; ?>"><br>
     <p id="categoryError"></p>
     Ingredients:<br>
-    <input class="form-control" id="ingredients" type="text" name="ingredients" value="<?php echo $row['ingredients']; ?>"><br>
+    <input class="form-control" id="ingredients" type="text" required name="ingredients" value="<?php echo $row['ingredients']; ?>"><br>
     <p id="ingredientsError"></p>
     Vegetarian:<br>
     <select class="form-control" id="vegetarian" name="vegetarian">
@@ -77,7 +77,7 @@ $conn->close();
     </select><br>
     <p id="vegetarianError"></p>
     Price:<br>
-    <input class="form-control" id="price" type="text" name="price" value="<?php echo $row['price']; ?>"><br>
+    <input class="form-control" id="price" type="text" required name="price" value="<?php echo $row['price']; ?>"><br>
     <p id="priceError"></p>
     <input class="btn btn-primary" type="submit" name="submit" value="Submit">
     
