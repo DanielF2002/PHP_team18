@@ -29,9 +29,9 @@ This website is created for a restaurant, features include links to other branch
 
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
-- [x] Feature 1 Xin FENG: Branches information presentation. (github: [feature1.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature1.php)) | shell
-- [x] Feature 2 Xin FENG: Branches information management page. (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | shell
-- [x] Feature 3 Xin FENG: New/edit a branch page, and database modification operations. (github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php) [feature3_result.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3_result.php) [feature3_validation.js](https://github.com/DanielF2002/PHP_team18/blob/main/js/feature3_validation.js)) | shell
+- [x] Feature 1 Xin FENG: Branches information presentation. (github: [feature1.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature1.php)) | (shell: [feature1.php](http://shell.hamk.fi/~feng23000/php_team18/feature1.php)) 
+- [x] Feature 2 Xin FENG: Branches information management page. (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | (shell: [feature2.php](http://shell.hamk.fi/~feng23000/php_team18/feature2.php)) 
+- [x] Feature 3 Xin FENG: New/edit a branch page, and database modification operations. (github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php) [feature3_result.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3_result.php) [feature3_validation.js](https://github.com/DanielF2002/PHP_team18/blob/main/js/feature3_validation.js)) | (shell: [feature3.php](http://shell.hamk.fi/~feng23000/php_team18/feature3.php)) 
 - [x] Feature 4 Jin LU: Online Reservation (github: [reservation.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservation.php)) | (shell: [reservation.php](http://shell.hamk.fi/~jin23000/PHP_team18/reservation.php))
 - [x] Feature 5 Jin LU: Reservation management (github: [reservationAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationAdmin.php)) | (shell: [reservationAdmin.php](http://shell.hamk.fi/~jin23000/PHP_team18/reservation.php))
 - [ ] Feature 6 Mu ZHAO: Online  feedback  
@@ -47,7 +47,7 @@ In this section, list and describe the features or functionality that you are wo
 A simple **table-like** page to show branches to visitors.
 - **Selects** and prints data from database table xin_feng_branches. (in feature1.php)
 
-(github: [feature1.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature1.php)) | Link to the form (shell.hamk.fi)
+(github: [feature1.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature1.php)) | (shell: [feature1.php](http://shell.hamk.fi/~feng23000/php_team18/feature1.php)) 
 
 ### Feature 2
 
@@ -55,7 +55,7 @@ A simple **table-like** page to show branches to visitors.
 There are 3 buttons: insert, update and delete. (in feature2.php)
 - **Javascript** to add a comfirm button when admin clicking the delete button. (in feature2.php)
 
-(github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | Link to the form (shell.hamk.fi)
+(github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | (shell: [feature2.php](http://shell.hamk.fi/~feng23000/php_team18/feature2.php)) 
 
 ### Feature 3
 
@@ -66,7 +66,7 @@ A feedback page to return all admin modifications to the database, and logic of 
 - **Filter** the database table xin_feng_branches. (in feature3.php)
 - **Insert**, **Edit**, **Delete**, the database table xin_feng_branches. (in feature3_result.php)
 
-(github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php) [feature3_result.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3_result.php) [feature3_validation.js](https://github.com/DanielF2002/PHP_team18/blob/main/js/feature3_validation.js)) | Link to the form (shell.hamk.fi)
+(github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php) [feature3_result.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3_result.php) [feature3_validation.js](https://github.com/DanielF2002/PHP_team18/blob/main/js/feature3_validation.js)) | (shell: [feature3.php](http://shell.hamk.fi/~feng23000/php_team18/feature3.php)) 
 
 ### Feature 4
 
@@ -145,7 +145,7 @@ The ER Diagram of the database:
 
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
-- Form 1 (Created By Xin FENG): Form Name: xin_feng_branches_form, Link to the related code file (github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php)) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 1 (Created By Xin FENG): Form Name: xin_feng_branches_form, Link to the related code file (github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php)) | (shell: [feature3.php](http://shell.hamk.fi/~feng23000/php_team18/feature3.php)) | Validations Applied
 - Form 2 (Created By Jin LU): Form Name: reservationForm, Link to the related code file (github)([reservation.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservation.php)) |  (shell: [reservation.php](http://shell.hamk.fi/~jin23000/PHP_team18/reservation.php)) | Validations Applied
 - Form 3 (Created By Jin LU): Form Name: reservationEditForm, Link to the related code file (github)([reservationEdit.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationEdit.php)) |  (shell: [reservationEdit.php](http://shell.hamk.fi/~jin23000/PHP_team18/reservationEdit.php)) | Validations Applied
 - Form 4 (Created By Mu ZHAO): Form Name: feedbackForm, Link to the related code file (github) ([feedback.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedback.php))| Link to the form (shell.hamk.fi). | Validations Applied
@@ -159,7 +159,7 @@ List and describe any forms that have been created as part of your project. Incl
 
 List any tables that you have created in the project work
 
-- Table 1 (Created By Xin FENG): Table Name: xin_feng_branches| Link to the related code file (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | Link to the table (shell.hamk.fi).
+- Table 1 (Created By Xin FENG): Table Name: xin_feng_branches| Link to the related code file (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | (shell: [feature2.php](http://shell.hamk.fi/~feng23000/php_team18/feature2.php).
 - Table 2 (Created By Jin LU): Table Name: jinLu_reservationInfo | Link to the related code file (github)([reservation.php](https://github.com/DanielF2002/PHP_team18/blob/main/adminReservation.php))| Link to the table (shell.hamk.fi).
 - Table 3 (Created By Mu ZHAO): Table Name: muZhao_feedback | Link to the related code file (github)([feedbackAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedbackAdmin.php)) | Link to the table (shell.hamk.fi).
 - Table 4 (Created By Xingxing WANG): Table Name: Menu | Link to the related code file (github: [menu_admin.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin.php)) | Link to the table (http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin.php).
