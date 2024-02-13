@@ -7,7 +7,7 @@ include "layout/header.php"; ?>
                 <p class="fs-5">Whether you're savoring a quiet dinner for two or celebrating a special occasion with
                     friends,
                     Midnight Sun Bistro promises an unforgettable voyage into the heart of culinary excellence.</p>
-                <a href="reservation.html" class="btn">Reserve a seat</a>
+                <a href="reservation.php" class="btn">Reserve a seat</a>
             </article>
             <aside class="col-12 col-lg-6">
                 <div id="carouselExample" class="carousel slide">
