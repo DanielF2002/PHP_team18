@@ -37,10 +37,10 @@ In this section, list and describe the features or functionality that you are wo
 - [x] Feature 6 Mu ZHAO: Online  feedback (github: [feedback.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedback.php)) | (shell: [feedback.php](http://shell.hamk.fi/~mu23000/PHP_team18/feedback.php)) 
 - [x] Feature 7 Mu ZHAO: Feedback management(github: [feedbackAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedbackAdmin.php)) | (shell: [feedbackAdmin.php](http://shell.hamk.fi/~mu23000/PHP_team18/feedbackAdmin.php)) 
 - [x] Feature 8 Xingxing WANG: Menu presentation
-  (github: [menu.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu.php)) | shell: (http://shell.hamk.fi/~xingxing23000/PHP_team18/menu.php)
+  (github: [menu.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu.php)) | (shell: [menu.php](http://shell.hamk.fi/~xingxing23000/PHP_team18/menu.php))
 - [x] Feature 9 Xingxing WANG: Admin menu management
 - [x] Feature 10 Xingxing WANG: Menu search
-  (github: [menu_admin.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin.php)) | shell: (http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin.php)
+  (github: [menu_admin.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin.php)) | (shell: [menu_admin.php](http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin.php))
 
 ### Feature 1
 
@@ -104,25 +104,23 @@ Menu page for customer.
 - **Table** for customer to read menu items from database table xingxing_menuItems.
 - **Filter** the database table xingxing_menuItems by category.
 
-(github: [menu.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu.php)) | shell: (http://shell.hamk.fi/~xingxing23000/PHP_team18/menu.php)
+(github: [menu.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu.php)) |(shell: [menu.php](http://shell.hamk.fi/~xingxing23000/PHP_team18/menu.php))
 
 ### Feature 9
 
 Menu management for admin.
 - **Table** for admin to read, add, update, delete the the menu items in database table xingxing_menuItems.
-  [menu_admin.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin.php)
 - **Forms** for admin to insert and upfate menu items.
-  [menu_admin_create.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin_create.php) | 
-  [menu_admin_update.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin_update.php)
 - **Javascript** to validate form input and add a comfirm button for deleting menu item. 
 
-(github: [menu_admin.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin.php)) | shell: (http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin.php)
+(github: [menu_admin.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin.php) |[menu_admin_create.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin_create.php) | [menu_admin_update.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin_update.php))
+ (shell: [menu_admin.php](http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin.php)| [menu_admin_create.php](http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin_create.php) | [menu_admin_update.php](http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin_update.php))
 
 ### Feature 10
 
 - Menu search for admin in menu management page.
 
-(github: [menu_admin.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin.php)) | shell: (http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin.php)
+(github: [menu_admin.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin.php)) | (shell: [menu_admin.php](http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin.php))
 
 ---
 
@@ -150,8 +148,8 @@ List and describe any forms that have been created as part of your project. Incl
 - Form 3 (Created By Jin LU): Form Name: reservationEditForm, Link to the related code file (github)([reservationEdit.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationEdit.php)) |  (shell: [reservationEdit.php](http://shell.hamk.fi/~jin23000/PHP_team18/reservationEdit.php)) | Validations Applied
 - Form 4 (Created By Mu ZHAO): Form Name: feedbackForm, Link to the related code file (github) ([feedback.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedback.php))| (shell: [feedback.php](http://shell.hamk.fi/~mu23000/PHP_team18/feedback.php)) | Validations Applied
 - Form 5 (Created By Mu ZHAO): Form Name: feedbackForm, Link to the related code file (github) ([feedbackEdit.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedbackEdit.php))| (shell: [feedbackEdit.php](http://shell.hamk.fi/~mu23000/PHP_team18/feedbackEdit.php))  | Validations Applied
-- Form 6 (Created By Xingxing WANG): Form Name: menu_insert, Link to the related code file (github: [menu_admin_create.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin_create.php)) | Link to the form (http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin_create.php). | Validations Applied
-- Form 7 (Created By Xingxing WANG): Form Name: menu_update, Link to the related code file (github: [menu_admin_update.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin_update.php)) | Link to the form (http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin_update.php). | Validations Applied
+- Form 6 (Created By Xingxing WANG): Form Name: menu_insert, Link to the related code file (github: [menu_admin_create.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin_create.php)) | (shell: [menu_admin_create.php](http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin_create.php)). | Validations Applied
+- Form 7 (Created By Xingxing WANG): Form Name: menu_update, Link to the related code file (github: [menu_admin_update.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin_update.php)) | (shell: [menu_admin_update.php](http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin_update.php)). | Validations Applied
 
 ---
 
@@ -159,9 +157,10 @@ List and describe any forms that have been created as part of your project. Incl
 
 List any tables that you have created in the project work
 
-- Table 1 (Created By Xin FENG): Table Name: xin_feng_branches| Link to the related code file (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | (shell: [feature2.php](http://shell.hamk.fi/~feng23000/php_team18/feature2.php).
+
+- Table 1 (Created By Xin FENG): Table Name: xin_feng_branches| Link to the related code file (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | (shell: [feature2.php](http://shell.hamk.fi/~feng23000/php_team18/feature2.php)).
 - Table 2 (Created By Jin LU): Table Name: jinLu_reservationInfo | Link to the related code file (github)([reservationAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationAdmin.php))| Link to the table (shell.hamk.fi). (shell: [reservationAdmin.php](http://shell.hamk.fi/~jin23000/PHP_team18/reservationAdmin.php)) 
 - Table 3 (Created By Mu ZHAO): Table Name: muZhao_feedback | Link to the related code file (github)([feedbackAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedbackAdmin.php)) | Link to the table (shell.hamk.fi).(shell: [feedbackAdmin.php](http://shell.hamk.fi/~mu23000/PHP_team18/feedbackAdmin.php)) 
-- Table 4 (Created By Xingxing WANG): Table Name: Menu | Link to the related code file (github: [menu_admin.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin.php)) | Link to the table (http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin.php).
+- Table 4 (Created By Xingxing WANG): Table Name: Menu | Link to the related code file (github: [menu_admin.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin.php)) | (shell: [menu_admin.php](http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin.php)).
 
 ---
