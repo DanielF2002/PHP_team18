@@ -2,7 +2,7 @@
 // This page is for performing raw SQL commands.
 // THINK REALLY CAREFULLY BEFORE OPEN IT.
 
-include 'db.php';
+include '../db.php';
 // Define an SQL query.
 $sql = "";
 

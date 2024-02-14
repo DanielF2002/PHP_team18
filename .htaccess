@@ -1,0 +1,18 @@
+# enable directory browsing
+Options All +Indexes
+
+<FilesMatch "^(reservationAdmin\.php|reservationEdit\.php)$">
+AuthType Basic
+AuthName "Restricted Access"
+
+#below line is the path on server, please change it to your own path
+#AuthUserFile  /home/jin23000/public_html/PHP_team18/.
+
+# below line is the path inside docker
+AuthUserFile  /var/www/html/PHP_Team18/.htpasswd
+Require user admin
+</FilesMatch>
+
+
+#username: admin
+#password: admin

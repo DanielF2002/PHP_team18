@@ -8,7 +8,9 @@ if (isset($_POST["mode"])) { // Only show page when mode is set.
     $branchSql = branchAssembleSql();
     // Run SQL and show the result.
     if (isset($branchSql) || !empty($branchSql)) {
+        echo '<main class="text-center p-5">';
         branchRunSqlAndEcho($branchSql);
+        echo '<a href="feature2.php" class="btn btn-primary mt-5 mb-5">Back</a></main>';
     }
     include "layout/footer.php";
 }
@@ -36,9 +38,9 @@ function branchRunSqlAndEcho($branchSql)
 {
     include 'db.php';
     if ($conn->query($branchSql) === TRUE) {
-        echo "<main><h1>Congratulations, branch information successfully updated.</h1></main>";
+        echo "<h1>Congratulations, branch information successfully updated.</h1>";
     } else {
-        echo "<main><h1>Error:</h1><p>" . $branchSql . "</p><p>" . $conn->error . "</p></main>";
+        echo "<h1>Error:</h1><p>" . $branchSql . "</p><p>" . $conn->error . "</p>";
     }
     $conn->close();
 }

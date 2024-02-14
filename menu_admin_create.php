@@ -69,38 +69,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>
 
 
-<!-- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        let form = document.getElementById('menu_insert');
-
-        form.addEventListener('submit', function(event) {
-            let item_name = document.getElementById('item_name').value.trim();
-            let category = document.getElementById('category').value.trim();
-            let ingredients = document.getElementById('ingredients').value.trim();
-            let vegetarian = document.getElementById('vegetarian').checked;
-            let price = document.getElementById('price').value.trim();
-
-            if (!item_name || !category || !price) {
-                event.preventDefault(); // Prevent form submission
-                alert('Item Name, Category, and Price are required fields.');
-                return;
-            }
-
-            if (isNaN(price)) {
-                event.preventDefault(); // Prevent form submission
-                alert('Price must be a valid number.');
-                return;
-            }
-
-            if (parseFloat(price) <= 0) {
-                event.preventDefault(); // Prevent form submission
-                alert('Price must be greater than zero.');
-                return;
-            }
-        });
-    });
-
-</script> -->
 
 <!--Form validation -->
 <script>
@@ -161,6 +129,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
+    //event handlers
     document.getElementById("name").addEventListener("input",validateName);
     document.getElementById("category").addEventListener("input",validateCategory);
     document.getElementById("ingredients").addEventListener("input",validateIngredients);
