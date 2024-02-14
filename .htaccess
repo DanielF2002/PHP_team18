@@ -1,7 +1,7 @@
 # enable directory browsing
 Options All +Indexes
 
-<FilesMatch "^(reservationAdmin\.php|reservationEdit\.php|feedbackAdmin\.php|feedbackEdit\.php)$">
+<FilesMatch "^(reservationAdmin\.php|reservationEdit\.php|feedbackAdmin\.php|feedbackEdit\.php|menu_admin\.php|menu_admin_create\.php|menu_admin_update\.php)$">
 AuthType Basic
 AuthName "Restricted Access"
 
