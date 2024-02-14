@@ -30,7 +30,9 @@ main .logo {
     flex-direction: row;
     align-items: center; 
     
+    
 }
+
 
 #delete, #edit {
     width: 5rem;
