@@ -34,8 +34,8 @@ In this section, list and describe the features or functionality that you are wo
 - [x] Feature 3 Xin FENG: New/edit a branch page, and database modification operations. (github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php) [feature3_result.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3_result.php) [feature3_validation.js](https://github.com/DanielF2002/PHP_team18/blob/main/js/feature3_validation.js)) | (shell: [feature3.php](http://shell.hamk.fi/~feng23000/php_team18/feature3.php)) 
 - [x] Feature 4 Jin LU: Online Reservation (github: [reservation.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservation.php)) | (shell: [reservation.php](http://shell.hamk.fi/~jin23000/PHP_team18/reservation.php))
 - [x] Feature 5 Jin LU: Reservation management (github: [reservationAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationAdmin.php)) | (shell: [reservationAdmin.php](http://shell.hamk.fi/~jin23000/PHP_team18/reservation.php))
-- [ ] Feature 6 Mu ZHAO: Online  feedback  
-- [ ] Feature 7 Mu ZHAO: Feedback management
+- [x] Feature 6 Mu ZHAO: Online  feedback (github: [feedback.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedback.php)) | (shell: [feedback.php](http://shell.hamk.fi/~mu23000/PHP_team18/feedback.php)) 
+- [x] Feature 7 Mu ZHAO: Feedback management(github: [feedbackAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedbackAdmin.php)) | (shell: [feedbackAdmin.php](http://shell.hamk.fi/~mu23000/PHP_team18/feedbackAdmin.php)) 
 - [x] Feature 8 Xingxing WANG: Menu presentation
   (github: [menu.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu.php)) | shell: (http://shell.hamk.fi/~xingxing23000/PHP_team18/menu.php)
 - [x] Feature 9 Xingxing WANG: Admin menu management
@@ -87,7 +87,7 @@ Reservation management. A page for admin to check, search, modify and cancel a r
 
 A page for user to submit the feedback inforamtion, includes a table, and database interaction.
 - **Form** for users to submit the feedback information, all datas go to muZhao_feedback table. Validation function in **Javascript** to validate the form.(feedback.php)
-(github: [feedback.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedback.php)) | Link to the form (shell.hamk.fi)
+(github: [feedback.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedback.php)) | Link to the form ((shell: [feedback.php](http://shell.hamk.fi/~mu23000/PHP_team18/feedback.php)) )
 
 
 ### Feature 7
@@ -95,7 +95,7 @@ A page for user to submit the feedback inforamtion, includes a table, and databa
 Feedback management. A page for admin, includes query, search, delete, and modify a table.
 - **Form** for admin to edit the selected data.
 - **Table** displaying all feedback for the admin's review, allowing the admin to perform CRUD operations on the "muZhao_feedback" table.
-(github: [feedbackAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedbackAdmin.php)) | Link to the form (shell.hamk.fi)
+(github: [feedbackAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedbackAdmin.php)) | Link to the form (shell.hamk.fi)(shell: [feedbackAdmin.php](http://shell.hamk.fi/~mu23000/PHP_team18/feedbackAdmin.php)) 
 
 
 ### Feature 8
@@ -148,8 +148,8 @@ List and describe any forms that have been created as part of your project. Incl
 - Form 1 (Created By Xin FENG): Form Name: xin_feng_branches_form, Link to the related code file (github: [feature3.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature3.php)) | (shell: [feature3.php](http://shell.hamk.fi/~feng23000/php_team18/feature3.php)) | Validations Applied
 - Form 2 (Created By Jin LU): Form Name: reservationForm, Link to the related code file (github)([reservation.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservation.php)) |  (shell: [reservation.php](http://shell.hamk.fi/~jin23000/PHP_team18/reservation.php)) | Validations Applied
 - Form 3 (Created By Jin LU): Form Name: reservationEditForm, Link to the related code file (github)([reservationEdit.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationEdit.php)) |  (shell: [reservationEdit.php](http://shell.hamk.fi/~jin23000/PHP_team18/reservationEdit.php)) | Validations Applied
-- Form 4 (Created By Mu ZHAO): Form Name: feedbackForm, Link to the related code file (github) ([feedback.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedback.php))| Link to the form (shell.hamk.fi). | Validations Applied
-- Form 5 (Created By Mu ZHAO): Form Name: feedbackForm, Link to the related code file (github) ([feedbackEdit.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedbackEdit.php))| Link to the form (shell.hamk.fi). | Validations Applied
+- Form 4 (Created By Mu ZHAO): Form Name: feedbackForm, Link to the related code file (github) ([feedback.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedback.php))| (shell: [feedback.php](http://shell.hamk.fi/~mu23000/PHP_team18/feedback.php)) | Validations Applied
+- Form 5 (Created By Mu ZHAO): Form Name: feedbackForm, Link to the related code file (github) ([feedbackEdit.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedbackEdit.php))| (shell: [feedbackEdit.php](http://shell.hamk.fi/~mu23000/PHP_team18/feedbackEdit.php))  | Validations Applied
 - Form 6 (Created By Xingxing WANG): Form Name: menu_insert, Link to the related code file (github: [menu_admin_create.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin_create.php)) | Link to the form (http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin_create.php). | Validations Applied
 - Form 7 (Created By Xingxing WANG): Form Name: menu_update, Link to the related code file (github: [menu_admin_update.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin_update.php)) | Link to the form (http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin_update.php). | Validations Applied
 
@@ -161,7 +161,7 @@ List any tables that you have created in the project work
 
 - Table 1 (Created By Xin FENG): Table Name: xin_feng_branches| Link to the related code file (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | (shell: [feature2.php](http://shell.hamk.fi/~feng23000/php_team18/feature2.php).
 - Table 2 (Created By Jin LU): Table Name: jinLu_reservationInfo | Link to the related code file (github)([reservation.php](https://github.com/DanielF2002/PHP_team18/blob/main/adminReservation.php))| Link to the table (shell.hamk.fi).
-- Table 3 (Created By Mu ZHAO): Table Name: muZhao_feedback | Link to the related code file (github)([feedbackAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedbackAdmin.php)) | Link to the table (shell.hamk.fi).
+- Table 3 (Created By Mu ZHAO): Table Name: muZhao_feedback | Link to the related code file (github)([feedbackAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedbackAdmin.php)) | Link to the table (shell.hamk.fi).(shell: [feedbackAdmin.php](http://shell.hamk.fi/~mu23000/PHP_team18/feedbackAdmin.php)) 
 - Table 4 (Created By Xingxing WANG): Table Name: Menu | Link to the related code file (github: [menu_admin.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin.php)) | Link to the table (http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin.php).
 
 ---
