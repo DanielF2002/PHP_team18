@@ -157,8 +157,9 @@ List and describe any forms that have been created as part of your project. Incl
 
 List any tables that you have created in the project work
 
+
 - Table 1 (Created By Xin FENG): Table Name: xin_feng_branches| Link to the related code file (github: [feature2.php](https://github.com/DanielF2002/PHP_team18/blob/main/feature2.php)) | (shell: [feature2.php](http://shell.hamk.fi/~feng23000/php_team18/feature2.php)).
-- Table 2 (Created By Jin LU): Table Name: jinLu_reservationInfo | Link to the related code file (github)([reservation.php](https://github.com/DanielF2002/PHP_team18/blob/main/adminReservation.php))| Link to the table (shell.hamk.fi).
+- Table 2 (Created By Jin LU): Table Name: jinLu_reservationInfo | Link to the related code file (github)([reservationAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/reservationAdmin.php))| Link to the table (shell.hamk.fi). (shell: [reservationAdmin.php](http://shell.hamk.fi/~jin23000/PHP_team18/reservationAdmin.php)) 
 - Table 3 (Created By Mu ZHAO): Table Name: muZhao_feedback | Link to the related code file (github)([feedbackAdmin.php](https://github.com/DanielF2002/PHP_team18/blob/main/feedbackAdmin.php)) | Link to the table (shell.hamk.fi).(shell: [feedbackAdmin.php](http://shell.hamk.fi/~mu23000/PHP_team18/feedbackAdmin.php)) 
 - Table 4 (Created By Xingxing WANG): Table Name: Menu | Link to the related code file (github: [menu_admin.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin.php)) | (shell: [menu_admin.php](http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin.php)).
 
