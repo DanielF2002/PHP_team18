@@ -101,7 +101,6 @@ Feedback management. A page for admin, includes query, search, delete, and modif
 ### Feature 8
 
 Menu page for customer. 
-- **Table** for customer to read menu items from database table xingxing_menuItems.
 - **Filter** the database table xingxing_menuItems by category.
 
 (github: [menu.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu.php)) |(shell: [menu.php](http://shell.hamk.fi/~xingxing23000/PHP_team18/menu.php))
@@ -110,8 +109,8 @@ Menu page for customer.
 
 Menu management for admin.
 - **Table** for admin to read, add, update, delete the the menu items in database table xingxing_menuItems.
-- **Forms** for admin to insert and upfate menu items.
-- **Javascript** to validate form input and add a comfirm button for deleting menu item. 
+- **Forms** for admin to insert and update menu items.
+- **Javascript** to validate form input and add a confirm button for deleting menu item. 
 
 (github: [menu_admin.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin.php) |[menu_admin_create.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin_create.php) | [menu_admin_update.php](https://github.com/DanielF2002/PHP_team18/blob/main/menu_admin_update.php))
  (shell: [menu_admin.php](http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin.php)| [menu_admin_create.php](http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin_create.php) | [menu_admin_update.php](http://shell.hamk.fi/~xingxing23000/PHP_team18/menu_admin_update.php))
